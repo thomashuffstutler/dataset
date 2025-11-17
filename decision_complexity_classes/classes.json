@@ -135,7 +135,11 @@
             "name": "QMA(2)",
             "latex_name": "\\mathsf{QMA(2)}",
             "description": "Quantum Merlin-Arthur with two unentangled certificates.",
-            "information": "For $k\\geq 2$, $\\mathsf{QMA(2)}=\\mathsf{QMA(k)}$ where $\\mathsf{QMA(k)}$ is the class with $k$ unentangled certificates."
+            "definition":"For $k\\geq 2$, $\\mathsf{QMA(2)}=\\mathsf{QMA(k)}$ where $\\mathsf{QMA(k)}$ is the class with $k$ unentangled certificates.",
+            "information": "",
+            "links":[["Complexity Zoo", "Q#qma2"], ["QMA(2) Reference", "https://marwahaha.github.io/qma2-reference"]],
+            "tags":["Non-deterministic", "Quantum"],
+            "see_also":["QMA"]
         },
         "NEXP":{
             "name": "NEXP",
@@ -667,6 +671,16 @@
             "links":[["Complexity Zoo", "D#dqc1"], ["Wikipedia", "https://en.wikipedia.org/wiki/One_clean_qubit"]],
             "tags":["Quantum"],
             "see_also":["BQP", "BPP"]
+        },
+        "StoqMA":{
+            "name":"StoqMA",
+            "latex_name":"\\mathsf{StoqMA}",
+            "description":"Stoquastic MA",
+            "definition":"The class of decision problems solvable using a <i>stoquastic</i> MA protocol. The difference from a standard MA protocol is that Arthur is a stoquastic verifier, meaning that he may run a circuit $C$ which comprises of the classical reversible gates $\\{\\textup{X}, \\textup{CNOT}, \\textup{Toffoli}\\}$, takes in ancilla qubits inicialized to $\\ket{0}$ and $\\ket{+}$, and measures in the Hadamard basis. Note that if Arthur measured in the standard basis instead of the Hadamard basis, this would become an MA protocol.",
+            "information":"Defined in [BBT06].",
+            "links":[["Complexity Zoo", "S#stoqma"]],
+            "tags":[],
+            "see_also":["MA", "QMA"]
         }
     }
 }
