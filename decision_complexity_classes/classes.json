@@ -676,7 +676,7 @@
             "name":"StoqMA",
             "latex_name":"\\mathsf{StoqMA}",
             "description":"Stoquastic MA",
-            "definition":"The class of decision problems solvable using a <i>stoquastic</i> MA protocol. The difference from a standard MA protocol is that Arthur is a stoquastic verifier, meaning that he may run a circuit $C$ which comprises of the classical reversible gates $\\{\\textup{X}, \\textup{CNOT}, \\textup{Toffoli}\\}$, takes in ancilla qubits inicialized to $\\ket{0}$ and $\\ket{+}$, and measures in the Hadamard basis. Note that if Arthur measured in the standard basis instead of the Hadamard basis, this would become an MA protocol.",
+            "definition":"The class of decision problems solvable using a <i>stoquastic</i> MA protocol. The difference from a standard MA protocol is that Arthur is a stoquastic verifier, meaning that he may run a verification circuit $C_x$ which comprises of the classical reversible gates $\\{\\textup{X}, \\textup{CNOT}, \\textup{Toffoli}\\}$, takes in a quantum witness state and ancilla qubits inicialized to $\\ket{0}$ and $\\ket{+}$, and measures in the Hadamard basis.",
             "information":"Defined in [BBT06].",
             "links":[["Complexity Zoo", "S#stoqma"]],
             "tags":[],
