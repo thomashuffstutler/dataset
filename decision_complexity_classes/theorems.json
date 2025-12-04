@@ -133,6 +133,11 @@
         },
         {
             "type":"containment",
+            "small":"RP",
+            "large":"NP"
+        },
+        {
+            "type":"containment",
             "small":"CH",
             "large":"PSPACE"
         },
