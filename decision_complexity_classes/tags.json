@@ -7,5 +7,26 @@
     },
     "Probabilistic":{
         
+    },
+    "Space":{
+
+    },
+    "Non-deterministic":{
+
+    },
+    "Deterministic":{
+
+    },
+    "Bounded-error":{
+    
+    },
+    "Zero-knowledge":{
+        
+    },
+    "Non-uniform":{
+
+    },
+    "Interactive":{
+        
     }
 }

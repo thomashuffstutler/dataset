@@ -692,6 +692,167 @@
                 "year": "2006",
                 "copyright": "Assumed arXiv.org perpetual, non-exclusive license to distribute this article for submissions made before January 2004"
             }
+        },
+        {
+            "identifier": "KW00",
+            "citation_key": "Kitaev_2000",
+            "entry_type": "inproceedings",
+            "fields": {
+                "series": "STOC00",
+                "title": "Parallelization, amplification, and exponential time simulation of quantum interactive proof systems",
+                "url": "http://dx.doi.org/10.1145/335305.335387",
+                "DOI": "10.1145/335305.335387",
+                "booktitle": "Proceedings of the thirty-second annual ACM symposium on Theory of computing",
+                "publisher": "ACM",
+                "author": "Kitaev, Alexei and Watrous, John",
+                "year": "2000",
+                "month": "may",
+                "pages": "608-617",
+                "collection": "STOC00"
+            }
+        },
+        {
+            "identifier": "Sho97",
+            "citation_key": "Shor_1997",
+            "entry_type": "article",
+            "fields": {
+                "title": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+                "volume": "26",
+                "ISSN": "1095-7111",
+                "url": "http://dx.doi.org/10.1137/S0097539795293172",
+                "DOI": "10.1137/s0097539795293172",
+                "number": "5",
+                "journal": "SIAM Journal on Computing",
+                "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+                "author": "Shor, Peter W.",
+                "year": "1997",
+                "month": "oct",
+                "pages": "1484-1509"
+            }
+        },
+        {
+            "identifier": "Aar05",
+            "citation_key": "Aaronson_2005",
+            "entry_type": "article",
+            "fields": {
+                "title": "Quantum computing and hidden variables",
+                "volume": "71",
+                "ISSN": "1094-1622",
+                "url": "http://dx.doi.org/10.1103/PhysRevA.71.032325",
+                "DOI": "10.1103/physreva.71.032325",
+                "number": "3",
+                "journal": "Physical Review A",
+                "publisher": "American Physical Society (APS)",
+                "author": "Aaronson, Scott",
+                "year": "2005",
+                "month": "mar"
+            }
+        },
+        {
+            "identifier": "HM13",
+            "citation_key": "Harrow_2013",
+            "entry_type": "article",
+            "fields": {
+                "title": "Testing Product States, Quantum Merlin-Arthur Games and Tensor Optimization",
+                "volume": "60",
+                "ISSN": "1557-735X",
+                "url": "http://dx.doi.org/10.1145/2432622.2432625",
+                "DOI": "10.1145/2432622.2432625",
+                "number": "1",
+                "journal": "Journal of the ACM",
+                "publisher": "Association for Computing Machinery (ACM)",
+                "author": "Harrow, Aram W. and Montanaro, Ashley",
+                "year": "2013",
+                "month": "feb",
+                "pages": "1-43"
+            }
+        },
+        {
+            "identifier": "Vya03",
+            "citation_key": "Vyalyi_2003",
+            "entry_type": "misc",
+            "fields": {
+                "title": "QMA=PP implies that PP contains PH",
+                "url": "https://eccc.weizmann.ac.il/report/2003/021/",
+                "publisher": "Electronic Colloquium on Computational Complexity",
+                "author": "Vyalyi, M.",
+                "year": "2003"
+            }
+        },
+        {
+            "identifier": "BGM06",
+            "citation_key": "Bohler_2006",
+            "entry_type": "article",
+            "fields": {
+                "title": "Error-bounded probabilistic computations between MA and AM",
+                "volume": "72",
+                "ISSN": "0022-0000",
+                "url": "http://dx.doi.org/10.1016/j.jcss.2006.05.001",
+                "DOI": "10.1016/j.jcss.2006.05.001",
+                "number": "6",
+                "journal": "Journal of Computer and System Sciences",
+                "publisher": "Elsevier BV",
+                "author": "Böhler, Elmar and Glaßer, Christian and Meister, Daniel",
+                "year": "2006",
+                "month": "sep",
+                "pages": "1043-1076"
+            }
+        },
+        {
+            "identifier": "FFK94",
+            "citation_key": "Fenner_1994",
+            "entry_type": "article",
+            "fields": {
+                "title": "Gap-definable counting classes",
+                "volume": "48",
+                "ISSN": "0022-0000",
+                "url": "http://dx.doi.org/10.1016/S0022-0000(05)80024-8",
+                "DOI": "10.1016/s0022-0000(05)80024-8",
+                "number": "1",
+                "journal": "Journal of Computer and System Sciences",
+                "publisher": "Elsevier BV",
+                "author": "Fenner, Stephen A. and Fortnow, Lance J. and Kurtz, Stuart A.",
+                "year": "1994",
+                "month": "feb",
+                "pages": "116-148"
+            }
+        },
+        {
+            "identifier": "BCK+14",
+            "citation_key": "Buhrman_2014",
+            "entry_type": "inproceedings",
+            "fields": {
+                "series": "STOC ’14",
+                "title": "Computing with a full memory: catalytic space",
+                "url": "http://dx.doi.org/10.1145/2591796.2591874",
+                "DOI": "10.1145/2591796.2591874",
+                "booktitle": "Proceedings of the forty-sixth annual ACM symposium on Theory of computing",
+                "publisher": "ACM",
+                "author": "Buhrman, Harry and Cleve, Richard and Koucký, Michal and Loff, Bruno and Speelman, Florian",
+                "year": "2014",
+                "month": "may",
+                "pages": "857–866",
+                "collection": "STOC ’14"
+            }
+        },
+        {
+            "identifier": "MW05",
+            "citation_key": "Marriott_2005",
+            "entry_type": "article",
+            "fields": {
+                "title": "Quantum Arthur-Merlin games",
+                "volume": "14",
+                "ISSN": "1420-8954",
+                "url": "http://dx.doi.org/10.1007/s00037-005-0194-x",
+                "DOI": "10.1007/s00037-005-0194-x",
+                "number": "2",
+                "journal": "computational complexity",
+                "publisher": "Springer Science and Business Media LLC",
+                "author": "Marriott, Chris and Watrous, John",
+                "year": "2005",
+                "month": "jun",
+                "pages": "122-152"
+            }
         }
     ]
 }

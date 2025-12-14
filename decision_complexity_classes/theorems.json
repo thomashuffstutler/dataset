@@ -888,6 +888,11 @@
             "type":"containment",
             "small":"StoqMA",
             "large":"SBP"
+        },
+        {
+            "type":"containment",
+            "small":"SZK",
+            "large":"QIP[2]"
         }
     ],
     "oracle_separations":[
