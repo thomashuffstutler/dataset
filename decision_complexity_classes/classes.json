@@ -1177,6 +1177,17 @@
             "links":[["Complexity Zoo", "S#stoqma"]],
             "tags":[],
             "see_also":["MA", "QMA"]
+        },
+        "QNC0":{
+            "name":"QNC0",
+            "latex_name":"\\mathsf{QNC^0}",
+            "description":"Quantum NC0",
+            "definition":"Constant-depth quantum circuits using a universal family of 1- and 2-qubit gates (no fanout gates).",
+            "information":"Defined in [HS05].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Q#qnc0"]],
+            "tags":["Circuit", "Quantum"],
+            "see_also":["NC0"]
         }
     }
 }

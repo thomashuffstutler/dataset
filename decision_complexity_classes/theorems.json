@@ -893,6 +893,11 @@
             "type":"containment",
             "small":"SZK",
             "large":"QIP[2]"
+        },
+        {
+            "type":"equality",
+            "a":"NC0",
+            "b":"QNC0"
         }
     ],
     "oracle_separations":[

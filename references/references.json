@@ -853,6 +853,23 @@
                 "month": "jun",
                 "pages": "122-152"
             }
+        },
+        {
+            "identifier": "HS05",
+            "citation_key": "Hoyer_2005",
+            "entry_type": "article",
+            "fields": {
+                "volume": "1",
+                "ISSN": "1557-2862",
+                "url": "http://dx.doi.org/10.4086/toc.2005.v001a005",
+                "DOI": "10.4086/toc.2005.v001a005",
+                "number": "1",
+                "journal": "Theory of Computing",
+                "publisher": "Theory of Computing Exchange",
+                "author": "Hoyer, Peter and Spalek, Robert",
+                "year": "2005",
+                "pages": "81-103"
+            }
         }
     ]
 }
