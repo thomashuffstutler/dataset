@@ -859,6 +859,7 @@
             "citation_key": "Hoyer_2005",
             "entry_type": "article",
             "fields": {
+                "title":"Quantum Fan-out is Powerful",
                 "volume": "1",
                 "ISSN": "1557-2862",
                 "url": "http://dx.doi.org/10.4086/toc.2005.v001a005",
@@ -869,6 +870,19 @@
                 "author": "Hoyer, Peter and Spalek, Robert",
                 "year": "2005",
                 "pages": "81-103"
+            }
+        },
+        {
+            "identifier": "PZ83",
+            "citation_key": "Papadimitriou_1983",
+            "entry_type": "inproceedings",
+            "fields": {
+                "title":"Two remarks on the power of counting",
+                "publisher": "Springer-Verlag",
+                "author": "Papadimitriou, Christos H. and Zachos, Stathis",
+                "year": "1983",
+                "pages": "269-276",
+                "url":"https://dl.acm.org/doi/10.5555/647211.720053"
             }
         }
     ]
