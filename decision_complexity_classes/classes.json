@@ -831,7 +831,7 @@
             "latex_name": "\\mathsf{\\oplus P}",
             "description": "Parity P",
             "definition": "The class of decision problems solvable by an NP machine M such that, <ul> <li> M has an odd number of accepting paths if x is a 'yes' instance </li> <li> M has an even number of accepting paths if x is a 'no' instance. </li></ul>",
-            "information": "It is known that ParityP is self-low, $\\mathsf{\\oplus P}^{\\mathsf{\\oplus P}} = \\mathsf{\\oplus P}$.",
+            "information": "It is known that ParityP is self-low, $\\mathsf{\\oplus P}^{\\mathsf{\\oplus P}} = \\mathsf{\\oplus P}$ [PZ83].",
             "complement": "ParityP",
             "links": [["Complexity Zoo", "Symbols#parityp"]],
             "tags": [],
