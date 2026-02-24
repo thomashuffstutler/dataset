@@ -2,281 +2,281 @@
     "theorems":[
         {
             "type": "containment",
-            "small": "EXP",
-            "large": "NEXP",
+            "subset": "EXP",
+            "superset": "NEXP",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "PSPACE",
-            "large": "EXP",
+            "subset": "PSPACE",
+            "superset": "EXP",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "BQP",
-            "large": "QCMA",
+            "subset": "BQP",
+            "superset": "QCMA",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "SZK",
-            "large": "PDQP",
+            "subset": "SZK",
+            "superset": "PDQP",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "BQP",
-            "large": "PDQP",
+            "subset": "BQP",
+            "superset": "PDQP",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "PDQP",
-            "large": "CH",
+            "subset": "PDQP",
+            "superset": "CH",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "BPP",
-            "large": "SZK"
+            "subset": "BPP",
+            "superset": "SZK"
         },
         {
             "type": "containment",
-            "small": "BQP",
-            "large": "DQP",
+            "subset": "BQP",
+            "superset": "DQP",
             "relativizes":1
         },
         {
             "type": "containment",
-            "small": "DQP",
-            "large": "EXP"
+            "subset": "DQP",
+            "superset": "EXP"
         },
         {
             "type": "containment",
-            "small": "L",
-            "large": "NL",
+            "subset": "L",
+            "superset": "NL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small": "SZK",
-            "large":"DQP"
+            "subset": "SZK",
+            "superset":"DQP"
         },
         {
             "type":"containment",
-            "small": "NP",
-            "large": "MA",
+            "subset": "NP",
+            "superset": "MA",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small": "MA",
-            "large": "QCMA",
+            "subset": "MA",
+            "superset": "QCMA",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"SZK",
-            "large": "AM"
+            "subset":"SZK",
+            "superset": "AM"
         },
         {
             "type":"containment",
-            "small": "QMA",
-            "large": "QMA(2)",
+            "subset": "QMA",
+            "superset": "QMA(2)",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small": "QMA(2)",
-            "large": "NEXP"
+            "subset": "QMA(2)",
+            "superset": "NEXP"
         },
         {
             "type":"containment",
-            "small": "R",
-            "large": "RE"
+            "subset": "R",
+            "superset": "RE"
         },
         {
             "type":"containment",
-            "small": "A0PP",
-            "large": "PP"
+            "subset": "A0PP",
+            "superset": "PP"
         },
         {
             "type":"containment",
-            "small": "AWPP",
-            "large": "A0PP"
+            "subset": "AWPP",
+            "superset": "A0PP"
         },
         {
             "type":"containment",
-            "small": "QMA",
-            "large": "A0PP"
+            "subset": "QMA",
+            "superset": "A0PP"
         },
         {
             "type":"containment",
-            "small": "BQP",
-            "large": "AWPP"
+            "subset": "BQP",
+            "superset": "AWPP"
         },
         {
             "type":"containment",
-            "small": "NEXP",
-            "large": "R"
+            "subset": "NEXP",
+            "superset": "R"
         },
         {
             "type":"containment",
-            "small":"ZPP",
-            "large":"RP"
+            "subset":"ZPP",
+            "superset":"RP"
         },
         {
             "type":"containment",
-            "small":"RP",
-            "large":"BPP"
+            "subset":"RP",
+            "superset":"BPP"
         },
         {
             "type":"containment",
-            "small":"RP",
-            "large":"NP"
+            "subset":"RP",
+            "superset":"NP"
         },
         {
             "type":"containment",
-            "small":"CH",
-            "large":"PSPACE"
+            "subset":"CH",
+            "superset":"PSPACE"
         },
         {
             "type":"containment",
-            "small":"MA",
-            "large":"Sigma2",
+            "subset":"MA",
+            "superset":"Sigma2",
             "citation_key":"trading_group_theory_for_randomness"
         },
         {
             "type":"containment",
-            "small":"AM",
-            "large":"Pi2"
+            "subset":"AM",
+            "superset":"Pi2"
         },
         {
             "type":"containment",
-            "small":"PsharpP",
-            "large":"CH"
+            "subset":"PsharpP",
+            "superset":"CH"
         },
         {
             "type":"containment",
-            "small":"Sigma2",
-            "large":"PH"
+            "subset":"Sigma2",
+            "superset":"PH"
         },
         {
             "type":"containment",
-            "small":"Pi2",
-            "large":"PH"
+            "subset":"Pi2",
+            "superset":"PH"
         },
         {
             "type":"containment",
-            "small":"TC0",
-            "large":"NC1"
+            "subset":"TC0",
+            "superset":"NC1"
         },
         {
             "type":"containment",
-            "small":"NC1",
-            "large":"L"
+            "subset":"NC1",
+            "superset":"L"
         },
         {
             "type":"containment",
-            "small":"NL",
-            "large":"AC1"
+            "subset":"NL",
+            "superset":"AC1"
         },
         {
             "type":"containment",
-            "small":"AC1",
-            "large":"TC1"
+            "subset":"AC1",
+            "superset":"TC1"
         },
         {
             "type":"containment",
-            "small":"NONE",
-            "large":"NC0"
+            "subset":"NONE",
+            "superset":"NC0"
         },
         {
             "type":"containment",
-            "small":"NC0",
-            "large":"AC0"
+            "subset":"NC0",
+            "superset":"AC0"
         },
         {
             "type":"containment",
-            "small":"AC0",
-            "large":"TC0"
+            "subset":"AC0",
+            "superset":"TC0"
         },
         {
             "type":"containment",
-            "small":"TC1",
-            "large":"P"
+            "subset":"TC1",
+            "superset":"P"
         },
         {
             "type":"containment",
-            "small":"SZK",
-            "large":"CZK"
+            "subset":"SZK",
+            "superset":"CZK"
         },
         {
             "type":"containment",
-            "small":"CZK",
-            "large":"PSPACE"
+            "subset":"CZK",
+            "superset":"PSPACE"
         },
         {
             "type":"containment",
-            "small":"BPP",
-            "large":"P/poly"
+            "subset":"BPP",
+            "superset":"P/poly"
         },
         {
             "type":"containment",
-            "small":"P/poly",
-            "large":"BQP/poly"
+            "subset":"P/poly",
+            "superset":"BQP/poly"
         },
         {
             "type":"containment",
-            "small":"BQP/poly",
-            "large":"BQP/mpoly"
+            "subset":"BQP/poly",
+            "superset":"BQP/mpoly"
         },
         {
             "type":"containment",
-            "small":"BQP/mpoly",
-            "large":"BQP/qpoly"
+            "subset":"BQP/mpoly",
+            "superset":"BQP/qpoly"
         },
         {
             "type":"containment",
-            "small":"BQP",
-            "large":"BQP/poly"
+            "subset":"BQP",
+            "superset":"BQP/poly"
         },
         {
             "type":"containment",
-            "small":"BQP/qpoly",
-            "large":"PP/poly"
+            "subset":"BQP/qpoly",
+            "superset":"PP/poly"
         },
         {
             "type":"containment",
-            "small":"QCPH",
-            "large":"QPH"
+            "subset":"QCPH",
+            "superset":"QPH"
         },
         {
             "type":"containment",
-            "small":"QPH",
-            "large":"R"
+            "subset":"QPH",
+            "superset":"R"
         },
         {
             "type":"containment",
-            "small":"QCPH",
-            "large":"CH"
+            "subset":"QCPH",
+            "superset":"CH"
         },
         {
             "type":"containment",
-            "small":"QMA(2)",
-            "large":"QPH",
+            "subset":"QMA(2)",
+            "superset":"QPH",
             "citation_key":"qph_original"
         },
         {
             "type":"containment",
-            "small":"QCMA",
-            "large":"QCPH"
+            "subset":"QCMA",
+            "superset":"QCPH"
         },
         {
             "type":"containment",
-            "small":"PH",
-            "large":"QCPH"
+            "subset":"PH",
+            "superset":"QCPH"
         },
         {
             "type":"equality",
@@ -290,8 +290,8 @@
         },
         {
             "type":"containment",
-            "small":"BPPPath",
-            "large":"PP"
+            "subset":"BPPPath",
+            "superset":"PP"
         },
         {
             "type":"equality",
@@ -310,54 +310,54 @@
         },
         {
             "type":"containment",
-            "small":"EQP",
-            "large":"BQP"
+            "subset":"EQP",
+            "superset":"BQP"
         },
         {
             "type":"containment",
-            "small":"P",
-            "large":"EQP"
+            "subset":"P",
+            "superset":"EQP"
         },
         {
             "type":"containment",
-            "small":"LWPP",
-            "large":"AWPP"
+            "subset":"LWPP",
+            "superset":"AWPP"
         },
         {
             "type":"containment",
-            "small":"EQP",
-            "large":"LWPP"
+            "subset":"EQP",
+            "superset":"LWPP"
         },
         {
             "type":"containment",
-            "small":"TC1",
-            "large":"CL"
+            "subset":"TC1",
+            "superset":"CL"
         },
         {
             "type":"containment",
-            "small":"BPPPath",
-            "large":"PH",
+            "subset":"BPPPath",
+            "superset":"PH",
             "citation_key":"treshold_computation_and_cryptographic_security"
         },
         {
             "type":"containment",
-            "small":"QMA1",
-            "large":"QMA"
+            "subset":"QMA1",
+            "superset":"QMA"
         },
         {
             "type":"containment",
-            "small":"QCMA",
-            "large":"QMA1"
+            "subset":"QCMA",
+            "superset":"QMA1"
         },
         {
             "type":"containment",
-            "small":"AH",
-            "large":"ALL"
+            "subset":"AH",
+            "superset":"ALL"
         },
         {
             "type":"containment",
-            "small":"RE",
-            "large":"AH"
+            "subset":"RE",
+            "superset":"AH"
         },
         {
             "type":"equality",
@@ -366,123 +366,123 @@
         },
         {
             "type":"containment",
-            "small":"MA",
-            "large":"SBP"
+            "subset":"MA",
+            "superset":"SBP"
         },
         {
             "type":"containment",
-            "small":"SBP",
-            "large":"AM"
+            "subset":"SBP",
+            "superset":"AM"
         },
         {
             "type":"containment",
-            "small":"SBP",
-            "large":"SBQP"
+            "subset":"SBP",
+            "superset":"SBQP"
         },
         {
             "type":"containment",
-            "small":"SBP",
-            "large":"BPPPath"
+            "subset":"SBP",
+            "superset":"BPPPath"
         },
         {
             "type":"containment",
-            "small":"PSPACE/poly",
-            "large":"ALL"
+            "subset":"PSPACE/poly",
+            "superset":"ALL"
         },
         {
             "type":"containment",
-            "small":"PP",
-            "large":"PP/poly"
+            "subset":"PP",
+            "superset":"PP/poly"
         },
         {
             "type":"containment",
-            "small":"EQP",
-            "large":"CequalsP"
+            "subset":"EQP",
+            "superset":"CequalsP"
         },
         {
             "type":"containment",
-            "small":"CequalsP",
-            "large":"PP"
+            "subset":"CequalsP",
+            "superset":"PP"
         },
         {
             "type":"containment",
-            "small":"PP",
-            "large":"PsharpP"
+            "subset":"PP",
+            "superset":"PsharpP"
         },
         {
             "type":"containment",
-            "small":"PH",
-            "large":"PsharpP"
+            "subset":"PH",
+            "superset":"PsharpP"
         },
         {
             "type":"containment",
-            "small":"coNP",
-            "large":"Sigma2"
+            "subset":"coNP",
+            "superset":"Sigma2"
         },
         {
             "type":"containment",
-            "small":"coNP",
-            "large":"Pi2"
+            "subset":"coNP",
+            "superset":"Pi2"
         },
         {
             "type":"containment",
-            "small":"coNP",
-            "large":"BPPPath"
+            "subset":"coNP",
+            "superset":"BPPPath"
         },
         {
             "type":"containment",
-            "small":"BQP/poly",
-            "large":"QCMA/poly"
+            "subset":"BQP/poly",
+            "superset":"QCMA/poly"
         },
         {
             "type":"containment",
-            "small":"QCMA",
-            "large":"QCMA/poly"
+            "subset":"QCMA",
+            "superset":"QCMA/poly"
         },
         {
             "type":"containment",
-            "small":"QCMA/poly",
-            "large":"QCMA/qpoly"
+            "subset":"QCMA/poly",
+            "superset":"QCMA/qpoly"
         },
         {
             "type":"containment",
-            "small":"BQP/qpoly",
-            "large":"QCMA/qpoly"
+            "subset":"BQP/qpoly",
+            "superset":"QCMA/qpoly"
         },
         {
             "type":"containment",
-            "small":"QCMA/qpoly",
-            "large":"QMA/poly"
+            "subset":"QCMA/qpoly",
+            "superset":"QMA/poly"
         },
         {
             "type":"containment",
-            "small":"QMA",
-            "large":"QMA/poly"
+            "subset":"QMA",
+            "superset":"QMA/poly"
         },
         {
             "type":"containment",
-            "small":"QMA/poly",
-            "large":"QMA/qpoly"
+            "subset":"QMA/poly",
+            "superset":"QMA/qpoly"
         },
         {
             "type":"containment",
-            "small":"QMA/poly",
-            "large":"PP/poly"
+            "subset":"QMA/poly",
+            "superset":"PP/poly"
         },
         {
             "type":"containment",
-            "small":"QMA/qpoly",
-            "large":"PSPACE/poly"
+            "subset":"QMA/qpoly",
+            "superset":"PSPACE/poly"
         },
         {
             "type":"containment",
-            "small":"PP/poly",
-            "large":"PSPACE/poly"
+            "subset":"PP/poly",
+            "superset":"PSPACE/poly"
         },
         {
             "type":"containment",
-            "small":"PSPACE",
-            "large":"PSPACE/poly"
+            "subset":"PSPACE",
+            "superset":"PSPACE/poly"
         },
         {
             "type":"equality",
@@ -491,23 +491,23 @@
         },
         {
             "type":"containment",
-            "small":"QMA",
-            "large":"QAM"
+            "subset":"QMA",
+            "superset":"QAM"
         },
         {
             "type":"containment",
-            "small":"QAM",
-            "large":"CH"
+            "subset":"QAM",
+            "superset":"CH"
         },
         {
             "type":"containment",
-            "small":"QIP[2]",
-            "large":"PSPACE"
+            "subset":"QIP[2]",
+            "superset":"PSPACE"
         },
         {
             "type":"containment",
-            "small":"QAM",
-            "large":"QIP[2]"
+            "subset":"QAM",
+            "superset":"QIP[2]"
         },
         {
             "type":"equality",
@@ -531,88 +531,88 @@
         },
         {
             "type":"containment",
-            "small":"EQP",
-            "large":"NQP"
+            "subset":"EQP",
+            "superset":"NQP"
         },
         {
             "type":"containment",
-            "small":"NQP",
-            "large":"A0PP"
+            "subset":"NQP",
+            "superset":"A0PP"
         },
         {
             "type":"containment",
-            "small":"NP",
-            "large":"NQP"
+            "subset":"NP",
+            "superset":"NQP"
         },
         {
             "type":"containment",
-            "small":"coNP",
-            "large":"CequalsP"
+            "subset":"coNP",
+            "superset":"CequalsP"
         },
         {
             "type":"containment",
-            "small":"APP",
-            "large":"PP"
+            "subset":"APP",
+            "superset":"PP"
         },
         {
             "type":"containment",
-            "small":"AWPP",
-            "large":"APP"
+            "subset":"AWPP",
+            "superset":"APP"
         },
         {
             "type":"containment",
-            "small":"ExistsBPP",
-            "large":"MA"
+            "subset":"ExistsBPP",
+            "superset":"MA"
         },
         {
             "type":"containment",
-            "small":"NP",
-            "large":"ExistsBPP",
+            "subset":"NP",
+            "superset":"ExistsBPP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"BPP",
-            "large":"ExistsBPP",
+            "subset":"BPP",
+            "superset":"ExistsBPP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"P",
-            "large":"NT"
+            "subset":"P",
+            "superset":"NT"
         },
         {
             "type":"containment",
-            "small":"NT",
-            "large":"NTstar"
+            "subset":"NT",
+            "superset":"NTstar"
         },
         {
             "type":"containment",
-            "small":"NTstar",
-            "large":"ParityP"
+            "subset":"NTstar",
+            "superset":"ParityP"
         },
         {
             "type":"containment",
-            "small":"ParityP",
-            "large":"MP",
+            "subset":"ParityP",
+            "superset":"MP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"MP",
-            "large":"PsharpP",
+            "subset":"MP",
+            "superset":"PsharpP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"BPP",
-            "large":"NISQ",
+            "subset":"BPP",
+            "superset":"NISQ",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"NISQ",
-            "large":"BQP",
+            "subset":"NISQ",
+            "superset":"BQP",
             "relativizes":1
         },
         {
@@ -635,14 +635,14 @@
         },
         {
             "type":"containment",
-            "small":"RG(1)",
-            "large":"PSPACE",
+            "subset":"RG(1)",
+            "superset":"PSPACE",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"MA",
-            "large":"RG(1)",
+            "subset":"MA",
+            "superset":"RG(1)",
             "relativizes":1
         },
         {
@@ -653,20 +653,20 @@
         },
                 {
             "type":"containment",
-            "small":"QRG(1)",
-            "large":"PSPACE",
+            "subset":"QRG(1)",
+            "superset":"PSPACE",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"QMA",
-            "large":"QRG(1)",
+            "subset":"QMA",
+            "superset":"QRG(1)",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"RG(1)",
-            "large":"QRG(1)",
+            "subset":"RG(1)",
+            "superset":"QRG(1)",
             "relativizes":1
         },
         {
@@ -677,70 +677,70 @@
         },
         {
             "type":"containment",
-            "small":"QEPH",
-            "large":"QPH",
+            "subset":"QEPH",
+            "superset":"QPH",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"BPL",
-            "large":"BQL",
+            "subset":"BPL",
+            "superset":"BQL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"RL",
-            "large":"BPL",
+            "subset":"RL",
+            "superset":"BPL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"L",
-            "large":"RL",
+            "subset":"L",
+            "superset":"RL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"P",
-            "large":"LOSSY",
+            "subset":"P",
+            "superset":"LOSSY",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"CL",
-            "large":"LOSSY",
+            "subset":"CL",
+            "superset":"LOSSY",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"LOSSY",
-            "large":"ZPP",
+            "subset":"LOSSY",
+            "superset":"ZPP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"NL",
-            "large":"DET"
+            "subset":"NL",
+            "superset":"DET"
         },
         {
             "type":"containment",
-            "small":"NC",
-            "large":"P"
+            "subset":"NC",
+            "superset":"P"
         },
         {
             "type":"containment",
-            "small":"NC2",
-            "large":"NC"
+            "subset":"NC2",
+            "superset":"NC"
         },
         {
             "type":"containment",
-            "small":"AC1",
-            "large":"NC2"
+            "subset":"AC1",
+            "superset":"NC2"
         },
         {
             "type":"containment",
-            "small":"DET",
-            "large":"NC2"
+            "subset":"DET",
+            "superset":"NC2"
         },
         {
             "type":"equality",
@@ -750,8 +750,8 @@
         },
         {
             "type":"containment",
-            "small":"TC1",
-            "large":"NC2"
+            "subset":"TC1",
+            "superset":"NC2"
         },
         {
             "type":"equality",
@@ -761,13 +761,13 @@
         },
         {
             "type":"containment",
-            "small":"BQL",
-            "large":"PL"
+            "subset":"BQL",
+            "superset":"PL"
         },
         {
             "type":"containment",
-            "small":"PL",
-            "large":"DET"
+            "subset":"PL",
+            "superset":"DET"
         },
         {
             "type":"equality",
@@ -782,35 +782,35 @@
         },
         {
             "type":"containment",
-            "small":"BPL",
-            "large":"BPdotL",
+            "subset":"BPL",
+            "superset":"BPdotL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"BPdotL",
-            "large":"BPP",
+            "subset":"BPdotL",
+            "superset":"BPP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"BPL",
-            "large":"L/poly"
+            "subset":"BPL",
+            "superset":"L/poly"
         },
         {
             "type":"containment",
-            "small":"L/poly",
-            "large":"P/poly"
+            "subset":"L/poly",
+            "superset":"P/poly"
         },
         {
             "type":"containment",
-            "small":"NL",
-            "large":"LOGCFL"
+            "subset":"NL",
+            "superset":"LOGCFL"
         },
         {
             "type":"containment",
-            "small":"LOGCFL",
-            "large":"AC1"
+            "subset":"LOGCFL",
+            "superset":"AC1"
         },
         {
             "type":"equality",
@@ -820,43 +820,43 @@
         },
         {
             "type":"containment",
-            "small":"L",
-            "large":"ParityL",
+            "subset":"L",
+            "superset":"ParityL",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"ParityL",
-            "large":"NC2"
+            "subset":"ParityL",
+            "superset":"NC2"
         },
         {
             "type":"containment",
-            "small":"BPP",
-            "large":"FH",
+            "subset":"BPP",
+            "superset":"FH",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"FH",
-            "large":"BQP",
+            "subset":"FH",
+            "superset":"BQP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"P",
-            "large":"NPcapcoNP",
+            "subset":"P",
+            "superset":"NPcapcoNP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"NPcapcoNP",
-            "large":"coNP",
+            "subset":"NPcapcoNP",
+            "superset":"coNP",
             "relativizes":1
         },
         {
             "type":"containment",
-            "small":"NPcapcoNP",
-            "large":"NP",
+            "subset":"NPcapcoNP",
+            "superset":"NP",
             "relativizes":1
         },
         {
@@ -866,33 +866,33 @@
         },
         {
             "type":"containment",
-            "small":"BPP",
-            "large":"DQC1"
+            "subset":"BPP",
+            "superset":"DQC1"
         },
         {
             "type":"containment",
-            "small":"DQC1",
-            "large":"BQP"
+            "subset":"DQC1",
+            "superset":"BQP"
         },
         {
             "type":"containment",
-            "small":"StoqMA",
-            "large":"QMA"
+            "subset":"StoqMA",
+            "superset":"QMA"
         },
         {
             "type":"containment",
-            "small":"MA",
-            "large":"StoqMA"
+            "subset":"MA",
+            "superset":"StoqMA"
         },
         {
             "type":"containment",
-            "small":"StoqMA",
-            "large":"SBP"
+            "subset":"StoqMA",
+            "superset":"SBP"
         },
         {
             "type":"containment",
-            "small":"SZK",
-            "large":"QIP[2]"
+            "subset":"SZK",
+            "superset":"QIP[2]"
         },
         {
             "type":"equality",
@@ -901,13 +901,13 @@
         },
         {
             "type":"containment",
-            "small":"CloneableQMA",
-            "large":"QMA"
+            "subset":"ClonableQMA",
+            "superset":"QMA"
         },
         {
             "type":"containment",
-            "small":"QCMA",
-            "large":"CloneableQMA"
+            "subset":"QCMA",
+            "superset":"ClonableQMA"
         }
     ],
     "oracle_separations":[
