@@ -859,7 +859,7 @@
             "citation_key": "Hoyer_2005",
             "entry_type": "article",
             "fields": {
-                "title":"Quantum Fan-out is Powerful",
+                "title": "Quantum Fan-out is Powerful",
                 "volume": "1",
                 "ISSN": "1557-2862",
                 "url": "http://dx.doi.org/10.4086/toc.2005.v001a005",
@@ -877,12 +877,46 @@
             "citation_key": "Papadimitriou_1983",
             "entry_type": "inproceedings",
             "fields": {
-                "title":"Two remarks on the power of counting",
+                "title": "Two remarks on the power of counting",
                 "publisher": "Springer-Verlag",
                 "author": "Papadimitriou, Christos H. and Zachos, Stathis",
                 "year": "1983",
                 "pages": "269-276",
-                "url":"https://dl.acm.org/doi/10.5555/647211.720053"
+                "url": "https://dl.acm.org/doi/10.5555/647211.720053"
+            }
+        },
+        {
+            "identifier": "NZ24",
+            "citation_key": "https://doi.org/10.4230/lipics.itcs.2024.82",
+            "entry_type": "inproceedings",
+            "fields": {
+                "doi": "10.4230/LIPICS.ITCS.2024.82",
+                "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2024.82",
+                "author": "Nehoran, Barak and Zhandry, Mark",
+                "keywords": "Cloning, telegraphing, no-cloning theorem, oracle separations, Theory of computation → Quantum query complexity, Theory of computation → Oracles and decision trees, Theory of computation → Complexity classes, Theory of computation → Cryptographic primitives, Theory of computation → Quantum complexity theory",
+                "language": "en",
+                "title": "A Computational Separation Between Quantum No-Cloning and No-Telegraphing",
+                "journal": "LIPIcs, Volume 287, ITCS 2024",
+                "volume": "287",
+                "pages": "82:1-82:23",
+                "publisher": "Schloss Dagstuhl - Leibniz-Zentrum für Informatik",
+                "year": "2024",
+                "copyright": "Creative Commons Attribution 4.0 International license"
+            }
+        },
+        {
+            "identifier": "BHNZ25",
+            "citation_key": "https://doi.org/10.48550/arxiv.2511.09551",
+            "entry_type": "misc",
+            "fields": {
+                "doi": "10.48550/ARXIV.2511.09551",
+                "url": "https://arxiv.org/abs/2511.09551",
+                "author": "Bostanci, John and Haferkamp, Jonas and Nirkhe, Chinmay and Zhandry, Mark",
+                "keywords": "Quantum Physics (quant-ph), Computational Complexity (cs.CC), FOS: Physical sciences, FOS: Physical sciences, FOS: Computer and information sciences, FOS: Computer and information sciences, F.1.3",
+                "title": "Separating QMA from QCMA with a classical oracle",
+                "publisher": "arXiv",
+                "year": "2025",
+                "copyright": "arXiv.org perpetual, non-exclusive license"
             }
         }
     ]

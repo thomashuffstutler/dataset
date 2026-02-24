@@ -39,7 +39,7 @@
             "latex_name": "\\mathsf{QMA}",
             "description": "Quantum Merlin-Arthur",
             "definition": "The class of decision problems for which a 'yes' instances may be efficiently verified by a family of uniform quantum circuits with access to a <i>quantum</i> proof. That is: <br> <ul> <li>If the answer is 'yes', then there exists a quantum state such that the verifier accepts with probability at least 2/3</li> <li>If the answer is 'no', then for all quantum states the verifier rejects with probability at least 2/3.</li></ul>",
-            "information": "The $k$-local Hamiltonian problem, for $k \\geq 2$, is QMA-complete [KKR04].",
+            "information": "The $k$-local Hamiltonian problem, for $k \\geq 2$, is QMA-complete [KKR04].<br><br>There exists a classical oracle separating QCMA from QMA [BHNZ25].",
             "complement": "",
             "links": [["Complexity Zoo", "Q#qma"]],
             "tags": ["Quantum", "Non-deterministic", "Bounded-error"],
@@ -50,7 +50,7 @@
             "latex_name": "\\mathsf{QCMA}",
             "description": "Quantum Classical Merlin-Arthur",
             "definition": "The class of decision problems for which a 'yes' instance may be efficiently verified by a family of uniform quantum circuits with access to a <i>classical</i> proof. Concretely: <br> <ul> <li>For all 'yes' instances, there exists a poly(|x|) size classical proof such that the verifier accepts with probability at least 2/3</li> <li> For a 'no' instance, for all such classical proofs the verifier rejects with probability at least 2/3.</li></ul>",
-            "information": "It is equal to $\\mathsf{QCMA}_1$, which is QCMA where the acceptance probability in the yes-case is 1 [JKNN11]. <br> A QCMA-complete problem is GSCONN (Ground State Connectivity), defined in [GS15]. Essentially given a Hamiltonian H and two ground states a,b, the goal is determining whether there exists a sequence of local unitary operations which transforms a to b while every intermediate state is in the ground space of H.<br> It is an open problem whether there exists a classical oracle which separates QCMA from QMA.",
+            "information": "It is equal to $\\mathsf{QCMA}_1$, which is QCMA where the acceptance probability in the yes-case is 1 [JKNN11]. <br><br> A QCMA-complete problem is GSCONN (Ground State Connectivity), defined in [GS15]. Essentially given a Hamiltonian H and two ground states a,b, the goal is determining whether there exists a sequence of local unitary operations which transforms a to b while every intermediate state is in the ground space of H.<br><br>There exists a classical oracle separating QCMA from QMA [BHNZ25].",
             "complement": "",
             "links": [["Complexity Zoo", "Q#qcma"]],
             "tags": ["Quantum", "Non-deterministic", "Bounded-error"],
@@ -1188,6 +1188,17 @@
             "links":[["Complexity Zoo", "Q#qnc0"]],
             "tags":["Circuit", "Quantum"],
             "see_also":["NC0"]
+        },
+        "ClonableQMA":{
+            "name":"ClonableQMA",
+            "latex_name":"\\mathsf{ClonableQMA}",
+            "description":"Clonable QMA",
+            "definition":"QMA, except the verifier has access to a polynomial-time <i>cloner</i> unitary which produces an approximate copy of the witness state whose fidelity to an actual copy is extremely close to 1.",
+            "information":"Defined in [NZ24]. The classical oracle separating QCMA from QMA also separates ClonableQMA from QMA [BHNZ25].",
+            "complement":"",
+            "links":[],
+            "tags":["Quantum"],
+            "see_also":["QMA", "QCMA"]
         }
     }
 }

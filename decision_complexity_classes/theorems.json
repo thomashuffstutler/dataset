@@ -898,6 +898,16 @@
             "type":"equality",
             "a":"NC0",
             "b":"QNC0"
+        },
+        {
+            "type":"containment",
+            "small":"CloneableQMA",
+            "large":"QMA"
+        },
+        {
+            "type":"containment",
+            "small":"QCMA",
+            "large":"CloneableQMA"
         }
     ],
     "oracle_separations":[
