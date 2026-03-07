@@ -918,6 +918,44 @@
                 "year": "2025",
                 "copyright": "arXiv.org perpetual, non-exclusive license"
             }
+        },
+        {
+            "identifier": "AD14",
+            "citation_key": "Aaronson_2014",
+            "entry_type": "article",
+            "fields": {
+                "title": "A Full Characterization of Quantum Advice",
+                "volume": "43",
+                "ISSN": "1095-7111",
+                "url": "http://dx.doi.org/10.1137/110856939",
+                "DOI": "10.1137/110856939",
+                "number": "3",
+                "journal": "SIAM Journal on Computing",
+                "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+                "author": "Aaronson, Scott and Drucker, Andrew",
+                "year": "2014",
+                "month": "jan",
+                "pages": "1131â€“1183"
+            }
+        },
+        {
+            "identifier": "KGN19",
+            "citation_key": "Kobayashi_2019",
+            "entry_type": "article",
+            "fields": {
+                "title": "Generalized Quantum Arthur--Merlin Games",
+                "volume": "48",
+                "ISSN": "1095-7111",
+                "url": "http://dx.doi.org/10.1137/17M1160173",
+                "DOI": "10.1137/17m1160173",
+                "number": "3",
+                "journal": "SIAM Journal on Computing",
+                "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+                "author": "Kobayashi, Hirotada and Gall, François Le and Nishimura, Harumichi",
+                "year": "2019",
+                "month": "jan",
+                "pages": "865-902"
+            }
         }
     ]
 }

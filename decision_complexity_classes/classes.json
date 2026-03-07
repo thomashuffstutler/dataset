@@ -450,7 +450,7 @@
             "complement": "",
             "links": [["Complexity Zoo", "B#bqpqpoly"]],
             "tags": ["Quantum", "Non-uniform"],
-            "see_also": ["BQP/poly", "BQP"]
+            "see_also": ["BQP/poly", "BQP", "YQPStar/poly"]
         },
         "QCPH":{
             "name":"QCPH",
@@ -1199,6 +1199,83 @@
             "links":[],
             "tags":["Quantum"],
             "see_also":["QMA", "QCMA"]
+        },
+        "YP":{
+            "name":"YP",
+            "latex_name":"\\mathsf{YP}",
+            "description":"Yaroslav-Percival",
+            "definition":"Class of decision problems $L$ for which there exist some polynomial-time Turing machines $A,B$ such that:<br><ul> <li> For all input sizes $n$, there exists an advice string $s_n\\in \\{0,1\\}^{\\textup{poly}(n)}$ such that $A(x,s_n)=1$.</li> <li>If $A(x,s_n)=1$, then $B(x,s_n)=L(x)$.</li></ul>",
+            "information":"See the link below for the original definition.",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#yp"], ["Shtetl-Optimized (Original definition)", "https://scottaaronson.blog/?p=77"]],
+            "tags":[],
+            "see_also":["YPStar", "YPP", "YQP"]
+        },
+        "YPStar":{
+            "name":"YPStar",
+            "latex_name":"\\mathsf{YP^*}",
+            "description":"Yaroslav-Percival Star",
+            "definition":"YP, except the verifier machine $A$ only depends on the advice $s_n$, ignoring $x$.",
+            "information":"Defined in [AD14].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#yp"]],
+            "tags":[],
+            "see_also":["YP", "YQPStar"]
+        },
+        "YPP":{
+            "name":"YPP",
+            "latex_name":"\\mathsf{YPP}",
+            "description":"Yaroslav BPP",
+            "definition":"YP, except the verifier machines are BPP machines.",
+            "information":"Defined in [AD14].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#ypp"]],
+            "tags":["Probabilistic"],
+            "see_also":["YP", "YQPStar"]
+        },
+        "YQP":{
+            "name":"YQP",
+            "latex_name":"\\mathsf{YQP}",
+            "description":"Yaroslav BQP",
+            "definition":"YP, except the verifier machines are BQP machines.",
+            "information":"Defined in [AD14].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#yqp"]],
+            "tags":["Quantum"],
+            "see_also":["YP", "YQPStar"]
+        },
+        "YQPStar":{
+            "name":"YQPStar",
+            "latex_name":"\\mathsf{YQP^*}",
+            "description":"Yaroslav BQP Star",
+            "definition":"YQP, except the verifier machine $A$ only depends on the advice $s_n$, ignoring $x$.",
+            "information":"Defined in [AD14].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#yp"]],
+            "tags":["Quantum"],
+            "see_also":["YP", "YPStar"]
+        },
+        "YQPStar/poly":{
+            "name":"YQPStar/poly",
+            "latex_name":"\\mathsf{YQP^*/poly}",
+            "description":"YPStar with advice",
+            "definition":"YPStar with polynomial advice.",
+            "information":"Defined in [AD14].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Y#yp"]],
+            "tags":["Quantum", "Non-uniform"],
+            "see_also":["YP", "YQPStar"]
+        },
+        "qq-QAM":{
+            "name":"qq-QAM",
+            "latex_name":"\\mathsf{qq-QAM}",
+            "description":"quantum-quantum QAM",
+            "definition":"QAM, except Arthur sends Merlin polynomially-many halves of EPR pairs (instead of random coinflips).",
+            "information":"Defined in [KGN19].",
+            "complement":"",
+            "links":[["Complexity Zoo", "Q#qqqam"]],
+            "tags":["Quantum"],
+            "see_also":["QAM", "QMA"]
         }
     }
 }
