@@ -1,0 +1,515 @@
+{
+    "class_list": {
+        "D": {
+            "name": "D",
+            "latex_name": "\\mathsf{D}",
+            "description": "Deterministic Query Complexity",
+            "definition": "The minimum depth of a deterministic decision tree that computes $f:\\{0,1\\}^n \\to \\{0,1\\}$ correctly on all inputs. Equivalently, the minimum number of input bits that must be queried in the worst case by any deterministic adaptive algorithm computing $f$.",
+            "information": "The most fundamental query complexity measure, and an upper bound for all standard measures. Every total Boolean function satisfies $D(f) \\leq n$. Known polynomial upper bounds include $D(f) \\leq C_0(f) \\cdot C_1(f) \\leq C(f)^2$ [Mon14] and $D(f) = O(Q(f)^6)$ [ABKRT21].",
+            "complement": "D",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Wikipedia",
+                    "https://en.wikipedia.org/wiki/Decision_tree_complexity"
+                ]
+            ],
+            "tags": [
+                "Deterministic"
+            ],
+            "see_also": [
+                "R",
+                "Q",
+                "C",
+                "R0"
+            ]
+        },
+        "R0": {
+            "name": "R0",
+            "latex_name": "\\mathsf{R_0}",
+            "description": "Zero-Error Randomized Query Complexity",
+            "definition": "Also called the Las Vegas query complexity. The minimum worst-case expected number of queries made by a randomized decision tree that always outputs the correct answer on all inputs. The algorithm must always be correct, but may use randomness to decide which variables to query.",
+            "information": "Sometimes written $\\mathsf{ZPP}(f)$. Satisfies $R(f) \\leq R_0(f) \\leq D(f)$. Saks and Wigderson [SW86] proved $R_0(f) \\geq \\Omega(\\sqrt{D(f)})$ for all total Boolean functions, implying $D(f) = O(R_0(f)^2)$. This bound is tight: the AND-OR tree achieves $R_0 = \\Theta(\\sqrt{D})$.",
+            "complement": "R0",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Saks-Wigderson 1986",
+                    "https://doi.org/10.1109/SFCS.1986.15"
+                ]
+            ],
+            "tags": [
+                "Randomized",
+                "Zero-error"
+            ],
+            "see_also": [
+                "R",
+                "D",
+                "R1"
+            ]
+        },
+        "R1": {
+            "name": "R1",
+            "latex_name": "\\mathsf{R_1}",
+            "description": "One-Sided Error Randomized Query Complexity",
+            "definition": "The minimum worst-case number of queries made by a randomized decision tree with one-sided error computing $f$. Concretely: <br><ul><li>On inputs $x$ with $f(x) = 1$, the algorithm accepts with probability at least $2/3$.</li><li>On inputs $x$ with $f(x) = 0$, the algorithm always rejects (no false positives).</li></ul>",
+            "information": "The one-sided error analogue of $R(f)$. Any one-sided algorithm is also a bounded-error algorithm, so $R(f) \\leq R_1(f)$. Similarly, any zero-error algorithm is one-sided, so $R_1(f) \\leq R_0(f)$. The function OR satisfies $R_1(\\text{OR}_n) = \\Theta(n)$ while $R(\\text{OR}_n) = \\Theta(\\sqrt{n})$.",
+            "complement": "coR1",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Randomized",
+                "One-sided"
+            ],
+            "see_also": [
+                "R",
+                "R0",
+                "N"
+            ]
+        },
+        "R": {
+            "name": "R",
+            "latex_name": "\\mathsf{R}",
+            "description": "Bounded-Error Randomized Query Complexity",
+            "definition": "The minimum worst-case number of queries made by a bounded-error randomized decision tree computing $f$. Concretely: the algorithm makes at most $T$ queries and satisfies <br><ul><li>On inputs $x$ with $f(x) = 1$, the algorithm accepts with probability at least $2/3$.</li><li>On inputs $x$ with $f(x) = 0$, the algorithm rejects with probability at least $2/3$.</li></ul>",
+            "information": "Also written $R_2(f)$ or $\\mathsf{BPP}(f)$. The error probability $1/3$ can be replaced by any constant $\\epsilon \\in (0,1/2)$ with only a constant overhead via amplification. Satisfies $Q(f) \\leq R(f) \\leq D(f)$. The polynomial method gives $R(f) \\geq \\widetilde{\\deg}(f)$ [BBC+01].",
+            "complement": "R",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Wikipedia",
+                    "https://en.wikipedia.org/wiki/Randomized_decision_tree"
+                ]
+            ],
+            "tags": [
+                "Randomized",
+                "Bounded-error"
+            ],
+            "see_also": [
+                "R0",
+                "R1",
+                "Q",
+                "D"
+            ]
+        },
+        "Q": {
+            "name": "Q",
+            "latex_name": "\\mathsf{Q}",
+            "description": "Bounded-Error Quantum Query Complexity",
+            "definition": "The minimum number of quantum queries to the input oracle needed to compute $f$ with bounded error. The input $x \\in \\{0,1\\}^n$ is accessed via a unitary oracle $O_x$ that maps $|i\\rangle|b\\rangle \\mapsto |i\\rangle|b \\oplus x_i\\rangle$. The algorithm is an adaptive sequence of unitary operations and oracle calls, and must output $f(x)$ with probability at least $2/3$.",
+            "information": "Also written $Q_2(f)$. Satisfies $\\widetilde{\\deg}(f) \\leq Q(f) \\leq R(f)$ [BBC+01]. By Reichardt's [Rei11] tight adversary bound theorem, $Q(f) = \\Theta(\\mathsf{Adv}^{\\pm}(f))$ exactly characterizes quantum query complexity. The polynomial method [BBC+01] and the adversary method [Amb02] are the two main lower bound techniques.",
+            "complement": "Q",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Wikipedia",
+                    "https://en.wikipedia.org/wiki/Quantum_query_complexity"
+                ],
+                [
+                    "Beals et al. 2001",
+                    "https://doi.org/10.1145/502090.502097"
+                ]
+            ],
+            "tags": [
+                "Quantum",
+                "Bounded-error"
+            ],
+            "see_also": [
+                "QE",
+                "R",
+                "adeg",
+                "Adv"
+            ]
+        },
+        "QE": {
+            "name": "QE",
+            "latex_name": "\\mathsf{Q_E}",
+            "description": "Exact Quantum Query Complexity",
+            "definition": "The minimum number of quantum queries to the input oracle needed to compute $f$ exactly, with no error, on all inputs.",
+            "information": "Also written $Q_0(f)$ or $\\mathsf{EQP}(f)$. Satisfies $Q(f) \\leq Q_E(f) \\leq D(f)$. By the polynomial method of Beals et al. [BBC+01], $Q_E(f) \\geq \\lceil \\deg(f)/2 \\rceil$, so $\\deg(f) \\leq 2 Q_E(f)$. Sometimes exponentially more powerful than deterministic: the parity function satisfies $Q_E(\\text{PAR}_n) = \\lceil n/2 \\rceil$ but $D(\\text{PAR}_n) = n$.",
+            "complement": "QE",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Beals et al. 2001",
+                    "https://doi.org/10.1145/502090.502097"
+                ]
+            ],
+            "tags": [
+                "Quantum",
+                "Zero-error"
+            ],
+            "see_also": [
+                "Q",
+                "D",
+                "deg"
+            ]
+        },
+        "N": {
+            "name": "N",
+            "latex_name": "\\mathsf{N}",
+            "description": "Nondeterministic Query Complexity",
+            "definition": "The minimum cost of a nondeterministic decision tree computing $f$, where cost is the maximum depth of an accepting path. Equivalently, $N(f) = C_1(f)$: the worst-case minimum number of bits that certify a $1$-input of $f$. Concretely, $N(f) = \\max_{x: f(x)=1} \\min_{S \\subseteq [n]} \\{|S| : f(y)=1 \\text{ for all } y \\text{ with } y_S = x_S\\}$.",
+            "information": "Satisfies $N(f) = C_1(f)$ (they are definitionally equivalent). Also $N(f) \\leq R_1(f)$ (any one-sided algorithm certifies YES instances). The co-nondeterministic complexity $\\mathsf{coN}(f) = C_0(f)$ analogously certifies NO instances. An important bound: $D(f) \\leq N(f) \\cdot \\mathsf{coN}(f)$ [Nis91].",
+            "complement": "coN",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Nondeterministic"
+            ],
+            "see_also": [
+                "coN",
+                "C1",
+                "R1"
+            ]
+        },
+        "coN": {
+            "name": "coN",
+            "latex_name": "\\mathsf{coN}",
+            "description": "Co-Nondeterministic Query Complexity",
+            "definition": "The minimum cost of a co-nondeterministic decision tree computing $f$, where cost is the maximum depth of an accepting path. Equivalently, $\\mathsf{coN}(f) = C_0(f)$: the worst-case minimum number of bits that certify a $0$-input of $f$.",
+            "information": "Satisfies $\\mathsf{coN}(f) = C_0(f)$. Note $\\mathsf{coN}(f) = N(\\neg f)$ where $\\neg f$ is the complement function. An important bound: $D(f) \\leq N(f) \\cdot \\mathsf{coN}(f)$ [Nis91].",
+            "complement": "N",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Nondeterministic"
+            ],
+            "see_also": [
+                "N",
+                "C0"
+            ]
+        },
+        "C": {
+            "name": "C",
+            "latex_name": "\\mathsf{C}",
+            "description": "Certificate Complexity",
+            "definition": "A certificate for input $x$ is a set $S \\subseteq [n]$ of indices such that all $y$ agreeing with $x$ on $S$ satisfy $f(y) = f(x)$. The certificate complexity of $x$ is $C(f,x) = \\min\\{|S| : S \\text{ is a certificate for } x\\}$. The certificate complexity of $f$ is $C(f) = \\max_x C(f,x)$.",
+            "information": "Satisfies $C(f) = \\max(C_0(f), C_1(f)) = \\max(\\mathsf{coN}(f), N(f))$. Also $\\mathsf{bs}(f) \\leq C(f) \\leq D(f)$ and $D(f) \\leq C(f)^2$ [Mon14]. Known to be polynomially equivalent to all other standard combinatorial measures ($\\mathsf{bs}$, $s$, $D$, $R$) [ABKRT21, Hua19].",
+            "complement": "C",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Combinatorial"
+            ],
+            "see_also": [
+                "C0",
+                "C1",
+                "bs",
+                "D",
+                "N",
+                "coN"
+            ]
+        },
+        "C1": {
+            "name": "C1",
+            "latex_name": "\\mathsf{C_1}",
+            "description": "1-Certificate Complexity",
+            "definition": "The worst-case certificate complexity over all $1$-inputs: $C_1(f) = \\max_{x: f(x) = 1} C(f, x)$. Equivalently, the minimum number of queries needed in the worst case to verify a YES instance nondeterministically.",
+            "information": "Equals $N(f)$ (the nondeterministic query complexity) by definition. Satisfies $C_1(f) \\leq C(f)$ and $C_1(f) \\leq D(f)$. The complement satisfies $C_1(\\neg f) = C_0(f)$.",
+            "complement": "C0",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Combinatorial",
+                "Nondeterministic"
+            ],
+            "see_also": [
+                "C0",
+                "C",
+                "N"
+            ]
+        },
+        "C0": {
+            "name": "C0",
+            "latex_name": "\\mathsf{C_0}",
+            "description": "0-Certificate Complexity",
+            "definition": "The worst-case certificate complexity over all $0$-inputs: $C_0(f) = \\max_{x: f(x) = 0} C(f, x)$. Equivalently, the minimum number of queries needed in the worst case to verify a NO instance nondeterministically.",
+            "information": "Equals $\\mathsf{coN}(f)$ by definition. Satisfies $C_0(f) \\leq C(f)$ and $C_0(f) \\leq D(f)$. The complement satisfies $C_0(\\neg f) = C_1(f)$.",
+            "complement": "C1",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Combinatorial",
+                "Nondeterministic"
+            ],
+            "see_also": [
+                "C1",
+                "C",
+                "coN"
+            ]
+        },
+        "bs": {
+            "name": "bs",
+            "latex_name": "\\mathsf{bs}",
+            "description": "Block Sensitivity",
+            "definition": "A block $B \\subseteq [n]$ is sensitive for $f$ at input $x$ if $f(x^B) \\neq f(x)$, where $x^B$ flips all bits of $x$ in $B$. The block sensitivity of $f$ at $x$ is $\\mathsf{bs}(f,x) = $ the maximum number of disjoint sensitive blocks at $x$. The block sensitivity of $f$ is $\\mathsf{bs}(f) = \\max_x \\mathsf{bs}(f,x)$.",
+            "information": "Introduced by Nisan [Nis91]. Satisfies $s(f) \\leq \\mathsf{bs}(f) \\leq C(f) \\leq D(f)$. The long-standing Sensitivity Conjecture, proved by Huang [Hua19], showed $\\mathsf{bs}(f) \\leq s(f)^2$, establishing that all standard combinatorial measures are polynomially equivalent. Nisan and Szegedy [NS94] showed $\\deg(f) \\geq \\sqrt{\\mathsf{bs}(f)}$, so $\\mathsf{bs}(f) \\leq \\deg(f)^2$.",
+            "complement": "bs",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Nisan 1991",
+                    "https://doi.org/10.1145/103418.103454"
+                ]
+            ],
+            "tags": [
+                "Combinatorial"
+            ],
+            "see_also": [
+                "fbs",
+                "s",
+                "C",
+                "deg"
+            ]
+        },
+        "fbs": {
+            "name": "fbs",
+            "latex_name": "\\mathsf{fbs}",
+            "description": "Fractional Block Sensitivity",
+            "definition": "The fractional relaxation of block sensitivity. Formally, $\\mathsf{fbs}(f) = \\max_x \\mathsf{fbs}(f,x)$, where $\\mathsf{fbs}(f,x)$ is the optimal value of a fractional block sensitivity LP: maximize $\\sum_B w_B$ over weights $w_B \\geq 0$ on sensitive blocks $B$ at $x$, subject to $\\sum_{B \\ni i} w_B \\leq 1$ for all $i \\in [n]$.",
+            "information": "Defined by Tal [Tal13]. Satisfies $\\mathsf{bs}(f) \\leq \\mathsf{fbs}(f) \\leq C(f)$ for all total Boolean functions. Also known to satisfy $\\mathsf{fbs}(f) = \\mathsf{RC}(f)$ (the randomized certificate complexity), connecting it to randomized complexity. Additionally, $\\widetilde{\\deg}(f)^2 = \\Theta(\\mathsf{fbs}(f))$ [Tal13].",
+            "complement": "fbs",
+            "links": [
+                [
+                    "Tal 2013",
+                    "https://doi.org/10.4230/LIPIcs.CCC.2013.242"
+                ]
+            ],
+            "tags": [
+                "Combinatorial"
+            ],
+            "see_also": [
+                "bs",
+                "C",
+                "adeg"
+            ]
+        },
+        "s": {
+            "name": "s",
+            "latex_name": "\\mathsf{s}",
+            "description": "Sensitivity",
+            "definition": "The sensitivity of $f$ at input $x$ is $s(f,x) = |\\{i \\in [n] : f(x) \\neq f(x^{(i)})\\}|$, the number of input bits whose individual flip changes $f(x)$. The sensitivity of $f$ is $s(f) = \\max_x s(f,x)$.",
+            "information": "The weakest standard combinatorial measure: $s(f) \\leq \\mathsf{bs}(f) \\leq C(f) \\leq D(f)$. For decades it was open whether $s$ and $\\mathsf{bs}$ are polynomially related (the Sensitivity Conjecture). This was resolved by Huang [Hua19], who proved $\\mathsf{bs}(f) \\leq s(f)^2$, implying all of $s, \\mathsf{bs}, C, D, R, Q$ are polynomially equivalent.",
+            "complement": "s",
+            "links": [
+                [
+                    "Huang 2019",
+                    "https://doi.org/10.4007/annals.2019.190.3.2"
+                ],
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Combinatorial"
+            ],
+            "see_also": [
+                "bs",
+                "C",
+                "deg"
+            ]
+        },
+        "deg": {
+            "name": "deg",
+            "latex_name": "\\mathsf{deg}",
+            "description": "Polynomial Degree",
+            "definition": "Every Boolean function $f: \\{0,1\\}^n \\to \\{0,1\\}$ has a unique multilinear representation as a real polynomial $p: \\mathbb{R}^n \\to \\mathbb{R}$ such that $p(x) = f(x)$ for all $x \\in \\{0,1\\}^n$. The polynomial degree of $f$ is $\\deg(f) = \\deg(p)$.",
+            "information": "Satisfies $\\deg(f) \\leq D(f)$ (a depth-$D$ decision tree gives a polynomial of degree $\\leq D$). Nisan and Szegedy [NS94] proved $\\deg(f) \\geq \\sqrt{\\mathsf{bs}(f)}$, so $\\mathsf{bs}(f) \\leq \\deg(f)^2$. Also $\\widetilde{\\deg}(f) \\leq \\deg(f)$ trivially. The polynomial degree and approximate degree are both algebraic lower bounds for quantum query complexity: $\\lceil \\deg(f)/2 \\rceil \\leq Q_E(f)$ [BBC+01].",
+            "complement": "deg",
+            "links": [
+                [
+                    "Nisan-Szegedy 1994",
+                    "https://doi.org/10.1007/BF01263419"
+                ],
+                [
+                    "Beals et al. 2001",
+                    "https://doi.org/10.1145/502090.502097"
+                ]
+            ],
+            "tags": [
+                "Algebraic"
+            ],
+            "see_also": [
+                "adeg",
+                "QE",
+                "bs",
+                "D"
+            ]
+        },
+        "adeg": {
+            "name": "adeg",
+            "latex_name": "\\widetilde{\\mathsf{deg}}",
+            "description": "Approximate Degree",
+            "definition": "The approximate degree of $f$ is $\\widetilde{\\deg}(f) = \\min\\{\\deg(p) : p$ is a real polynomial with $|p(x) - f(x)| \\leq 1/3$ for all $x \\in \\{0,1\\}^n\\}$.",
+            "information": "Defined by Nisan and Szegedy [NS94]. A foundational lower bound for quantum query complexity: $\\widetilde{\\deg}(f) \\leq Q(f)$ for all $f$ [BBC+01]. Known to satisfy $\\widetilde{\\deg}(f) \\geq \\sqrt{\\mathsf{bs}(f)}$ [She13], so $\\mathsf{bs}(f) \\leq \\widetilde{\\deg}(f)^2$. Also $\\widetilde{\\deg}(f)^2 = \\Theta(\\mathsf{fbs}(f))$ [Tal13]. The OR function has $\\widetilde{\\deg}(\\text{OR}_n) = \\Theta(\\sqrt{n})$.",
+            "complement": "adeg",
+            "links": [
+                [
+                    "Nisan-Szegedy 1994",
+                    "https://doi.org/10.1007/BF01263419"
+                ],
+                [
+                    "Beals et al. 2001",
+                    "https://doi.org/10.1145/502090.502097"
+                ],
+                [
+                    "Sherstov 2013",
+                    "https://doi.org/10.1145/2488608.2488670"
+                ]
+            ],
+            "tags": [
+                "Algebraic",
+                "Quantum"
+            ],
+            "see_also": [
+                "deg",
+                "Q",
+                "fbs",
+                "Adv"
+            ]
+        },
+        "Adv": {
+            "name": "Adv",
+            "latex_name": "\\mathsf{Adv}^{\\pm}",
+            "description": "General (Negative-Weight) Adversary Bound",
+            "definition": "Given an adversary matrix $\\Gamma$ (a real symmetric matrix indexed by inputs, with $\\Gamma[x,y] = 0$ whenever $f(x) = f(y)$), the adversary bound is $\\mathsf{Adv}(\\Gamma) = \\|\\Gamma\\| / \\max_i \\|\\Gamma \\circ D_i\\|$, where $D_i[x,y] = |x_i - y_i|$ and $\\circ$ is the Hadamard product. The general adversary bound is $\\mathsf{Adv}^{\\pm}(f) = \\max_{\\Gamma} \\mathsf{Adv}(\\Gamma)$ over all real symmetric $\\Gamma$ with $\\Gamma[x,y]=0$ when $f(x)=f(y)$.",
+            "information": "Introduced by H\u00f8yer, Lee, and \u0160palek [HLS07] as a generalization allowing negative weights. The fundamental theorem of Reichardt [Rei11] proves $Q(f) = \\Theta(\\mathsf{Adv}^{\\pm}(f))$ for all total Boolean functions, characterizing bounded-error quantum query complexity exactly via the adversary bound. This implies $Q$ and $\\mathsf{Adv}^{\\pm}$ are equal up to constant factors.",
+            "complement": "Adv",
+            "links": [
+                [
+                    "Reichardt 2011",
+                    "https://doi.org/10.1145/1993636.1993683"
+                ],
+                [
+                    "H\u00f8yer-Lee-\u0160palek 2007",
+                    "https://doi.org/10.1145/1374376.1374452"
+                ]
+            ],
+            "tags": [
+                "Quantum",
+                "Algebraic"
+            ],
+            "see_also": [
+                "Q",
+                "adeg"
+            ]
+        },
+        "UPP": {
+            "name": "UPP",
+            "latex_name": "\\mathsf{UPP}",
+            "description": "Unbounded-Error Probabilistic Query Complexity",
+            "definition": "The minimum number of queries made by a randomized decision tree that outputs the correct answer with probability strictly greater than $1/2$ on all inputs. No bound on the gap above $1/2$ is required.",
+            "information": "Also called the PP query complexity. Satisfies $\\mathsf{UPP}(f) \\leq Q(f) \\leq R(f) \\leq D(f)$. Characterised algebraically: $\\mathsf{UPP}(f) = \\lceil \\deg_{\\pm}(f) / 2 \\rceil$ where $\\deg_{\\pm}(f)$ is the minimum degree of a real polynomial $p$ with $\\text{sign}(p(x)) = (-1)^{f(x)}$ for all $x \\in \\{0,1\\}^n$ [Bei93]. Can be exponentially smaller than $Q(f)$: the Forrelation function separates $\\mathsf{UPP}$ and $Q$ [AA15].",
+            "complement": "UPP",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ],
+                [
+                    "Beigel 1993",
+                    "https://doi.org/10.1006/jcss.1994.1062"
+                ]
+            ],
+            "tags": [
+                "Randomized",
+                "Unbounded-error"
+            ],
+            "see_also": [
+                "Q",
+                "R",
+                "adeg",
+                "deg"
+            ]
+        },
+        "coR1": {
+            "name": "coR1",
+            "latex_name": "\\mathsf{coR_1}",
+            "description": "Co-One-Sided Error Randomized Query Complexity",
+            "definition": "The minimum worst-case number of queries made by a randomized decision tree with co-one-sided error: <br><ul><li>On inputs $x$ with $f(x) = 0$, the algorithm rejects with probability at least $2/3$.</li><li>On inputs $x$ with $f(x) = 1$, the algorithm always accepts (no false negatives).</li></ul>",
+            "information": "Satisfies $R(f) \\leq \\mathsf{coR_1}(f) \\leq R_0(f)$. The complement of $R_1$: $\\mathsf{coR_1}(f) = R_1(\\neg f)$. For the OR function, $\\mathsf{coR_1}(\\text{OR}_n) = \\Theta(1)$ (just query any bit; accept if it's 1) while $R_1(\\text{OR}_n) = \\Theta(n)$.",
+            "complement": "R1",
+            "links": [
+                [
+                    "Buhrman-de Wolf Survey",
+                    "https://doi.org/10.1016/S0304-3975(02)00287-7"
+                ]
+            ],
+            "tags": [
+                "Randomized",
+                "One-sided"
+            ],
+            "see_also": [
+                "R1",
+                "R",
+                "coN"
+            ]
+        },
+        "degF2": {
+            "name": "degF2",
+            "latex_name": "\\mathsf{deg}_{\\mathbb{F}_2}",
+            "description": "GF(2) Polynomial Degree / Parity Decision Tree Complexity",
+            "definition": "Every Boolean function $f:\\{0,1\\}^n \\to \\{0,1\\}$ has a unique multilinear representation as a polynomial over $\\mathbb{F}_2$. The GF(2) degree $\\deg_{\\mathbb{F}_2}(f)$ is the degree of this polynomial. Equivalently, it is the minimum number of queries to XOR (parity) functions of input bits needed by a parity decision tree that computes $f$.",
+            "information": "Satisfies $\\deg_{\\mathbb{F}_2}(f) \\leq \\deg(f)$ (a real representation can be reduced mod 2). Also $\\deg_{\\mathbb{F}_2}(f) \\leq D(f)$ and $\\deg_{\\mathbb{F}_2}(f) \\geq \\log_2(s(f) + 1)$ (related to sensitivity). Parity functions have $\\deg_{\\mathbb{F}_2}(\\text{PAR}_n) = 1$ but $\\deg(\\text{PAR}_n) = n$, showing the two degree notions can differ maximally.",
+            "complement": "degF2",
+            "links": [
+                [
+                    "Wikipedia (Parity decision tree)",
+                    "https://en.wikipedia.org/wiki/Parity_decision_tree"
+                ]
+            ],
+            "tags": [
+                "Algebraic"
+            ],
+            "see_also": [
+                "deg",
+                "adeg",
+                "D"
+            ]
+        }
+    }
+}

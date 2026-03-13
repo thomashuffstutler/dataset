@@ -1,0 +1,357 @@
+{
+    "theorems": [
+        {
+            "type": "containment",
+            "subset": "s",
+            "superset": "bs",
+            "description": "s(f) \u2264 bs(f) for all f",
+            "note": "Each individually flipped sensitive bit is a sensitive block of size 1."
+        },
+        {
+            "type": "containment",
+            "subset": "bs",
+            "superset": "fbs",
+            "description": "bs(f) \u2264 fbs(f) for all f",
+            "note": "Block sensitivity is a special case of fractional block sensitivity (set all block weights to 0 or 1)."
+        },
+        {
+            "type": "containment",
+            "subset": "fbs",
+            "superset": "C",
+            "description": "fbs(f) \u2264 C(f) for all f",
+            "note": "Shown by Tal [Tal13].",
+            "citation_key": "Tal13"
+        },
+        {
+            "type": "containment",
+            "subset": "C0",
+            "superset": "C",
+            "description": "C_0(f) \u2264 C(f) for all f",
+            "note": "C(f) = max(C_0(f), C_1(f)) by definition."
+        },
+        {
+            "type": "containment",
+            "subset": "C1",
+            "superset": "C",
+            "description": "C_1(f) \u2264 C(f) for all f",
+            "note": "C(f) = max(C_0(f), C_1(f)) by definition."
+        },
+        {
+            "type": "containment",
+            "subset": "C",
+            "superset": "D",
+            "description": "C(f) \u2264 D(f) for all f",
+            "note": "A depth-D deterministic decision tree certifies every input with at most D queried bits."
+        },
+        {
+            "type": "containment",
+            "subset": "N",
+            "superset": "C1",
+            "description": "N(f) \u2264 C_1(f) for all f",
+            "note": "N(f) = C_1(f) by definition (they are the same measure). See equality below."
+        },
+        {
+            "type": "containment",
+            "subset": "coN",
+            "superset": "C0",
+            "description": "coN(f) \u2264 C_0(f) for all f",
+            "note": "coN(f) = C_0(f) by definition. See equality below."
+        },
+        {
+            "type": "containment",
+            "subset": "adeg",
+            "superset": "deg",
+            "description": "adeg(f) \u2264 deg(f) for all f",
+            "note": "Any exact representing polynomial is also a 1/3-approximating polynomial."
+        },
+        {
+            "type": "containment",
+            "subset": "adeg",
+            "superset": "Q",
+            "description": "adeg(f) \u2264 Q(f) for all f",
+            "note": "The polynomial method lower bound [BBC+01]: any bounded-error quantum algorithm using T queries computes a polynomial of degree \u2264 T approximating f.",
+            "citation_key": "BBC01"
+        },
+        {
+            "type": "containment",
+            "subset": "deg",
+            "superset": "D",
+            "description": "deg(f) \u2264 D(f) for all f",
+            "note": "A deterministic decision tree of depth D computes f via a multilinear polynomial of degree \u2264 D (sum over root-to-leaf paths)."
+        },
+        {
+            "type": "containment",
+            "subset": "Q",
+            "superset": "R",
+            "description": "Q(f) \u2264 R(f) for all f",
+            "note": "Any bounded-error classical randomized algorithm can be simulated by a quantum algorithm with at most the same query cost."
+        },
+        {
+            "type": "containment",
+            "subset": "R",
+            "superset": "R1",
+            "description": "R(f) \u2264 R_1(f) for all f",
+            "note": "Any one-sided error algorithm (always correct on NO) also has bounded two-sided error, so R_1 is at least as costly."
+        },
+        {
+            "type": "containment",
+            "subset": "R1",
+            "superset": "R0",
+            "description": "R_1(f) \u2264 R_0(f) for all f",
+            "note": "Any zero-error (Las Vegas) algorithm never errs on YES inputs, making it also one-sided. So R_1 is never harder than R_0."
+        },
+        {
+            "type": "containment",
+            "subset": "R0",
+            "superset": "D",
+            "description": "R_0(f) \u2264 D(f) for all f",
+            "note": "A deterministic algorithm is a special case of a Las Vegas algorithm."
+        },
+        {
+            "type": "containment",
+            "subset": "Q",
+            "superset": "QE",
+            "description": "Q(f) \u2264 Q_E(f) for all f",
+            "note": "Any exact quantum algorithm has bounded error (trivially), so Q_E is at least as costly."
+        },
+        {
+            "type": "containment",
+            "subset": "QE",
+            "superset": "D",
+            "description": "Q_E(f) \u2264 D(f) for all f",
+            "note": "A deterministic algorithm can be viewed as an exact quantum algorithm."
+        },
+        {
+            "type": "containment",
+            "subset": "UPP",
+            "superset": "Q",
+            "description": "UPP(f) \u2264 Q(f) for all f",
+            "note": "Any bounded-error quantum algorithm also computes f with probability > 1/2, so it qualifies as an unbounded-error algorithm."
+        },
+        {
+            "type": "containment",
+            "subset": "Adv",
+            "superset": "Q",
+            "description": "Adv\u00b1(f) \u2264 Q(f) for all f",
+            "note": "The general adversary bound is a lower bound for bounded-error quantum query complexity [HLS07].",
+            "citation_key": "HLS07"
+        },
+        {
+            "type": "containment",
+            "subset": "degF2",
+            "superset": "deg",
+            "description": "deg_F2(f) \u2264 deg(f) for all f",
+            "note": "The GF(2) degree is at most the real polynomial degree, since any real multilinear polynomial can be reduced mod 2."
+        },
+        {
+            "type": "containment",
+            "subset": "degF2",
+            "superset": "D",
+            "description": "deg_F2(f) \u2264 D(f) for all f",
+            "note": "A deterministic decision tree gives a representation over GF(2) of degree at most its depth."
+        },
+        {
+            "type": "containment",
+            "subset": "R",
+            "superset": "coR1",
+            "description": "R(f) \u2264 coR_1(f) for all f",
+            "note": "Any co-one-sided algorithm (always correct on YES) also has bounded two-sided error."
+        },
+        {
+            "type": "containment",
+            "subset": "coR1",
+            "superset": "R0",
+            "description": "coR_1(f) \u2264 R_0(f) for all f",
+            "note": "A zero-error algorithm never errs on NO inputs, making it also co-one-sided."
+        },
+        {
+            "type": "equality",
+            "a": "Q",
+            "b": "Adv",
+            "description": "Q(f) = Theta(Adv\u00b1(f)) for all total Boolean f",
+            "note": "Reichardt's tight adversary theorem [Rei11]: bounded-error quantum query complexity is characterised exactly (up to constant factors) by the general adversary bound.",
+            "citation_key": "Rei11"
+        },
+        {
+            "type": "equality",
+            "a": "N",
+            "b": "C1",
+            "description": "N(f) = C_1(f) for all f",
+            "note": "Definitional equivalence: nondeterministic query complexity equals 1-certificate complexity."
+        },
+        {
+            "type": "equality",
+            "a": "coN",
+            "b": "C0",
+            "description": "coN(f) = C_0(f) for all f",
+            "note": "Definitional equivalence: co-nondeterministic query complexity equals 0-certificate complexity."
+        },
+        {
+            "type": "equality",
+            "a": "adeg",
+            "b": "fbs",
+            "description": "adeg(f)^2 = Theta(fbs(f)) for all f",
+            "note": "Shown by Tal [Tal13]: the square of the approximate degree is polynomially equivalent to the fractional block sensitivity.",
+            "citation_key": "Tal13"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "D",
+            "superset": "C",
+            "polynomial": 2,
+            "description": "D(f) = O(C(f)^2) for all f",
+            "note": "From D(f) \u2264 C_0(f) \u00b7 C_1(f) \u2264 C(f)^2 [Mon14].",
+            "citation_key": "Mon14"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "D",
+            "superset": "R0",
+            "polynomial": 2,
+            "description": "D(f) = O(R_0(f)^2) for all f",
+            "note": "Saks and Wigderson [SW86] proved R_0(f) \u2265 Omega(sqrt(D(f))), implying D(f) = O(R_0(f)^2). Achieved with equality by the AND-OR tree.",
+            "citation_key": "SW86"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "bs",
+            "superset": "s",
+            "polynomial": 2,
+            "description": "bs(f) \u2264 s(f)^2 for all f",
+            "note": "The resolution of the Sensitivity Conjecture by Huang [Hua19]. Combined with s \u2264 bs, all combinatorial measures are now known to be polynomially equivalent.",
+            "citation_key": "Hua19"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "bs",
+            "superset": "deg",
+            "polynomial": 2,
+            "description": "bs(f) \u2264 deg(f)^2 for all f",
+            "note": "Nisan and Szegedy [NS94] proved deg(f) \u2265 sqrt(bs(f)), equivalently bs(f) \u2264 deg(f)^2.",
+            "citation_key": "NS94"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "bs",
+            "superset": "adeg",
+            "polynomial": 2,
+            "description": "bs(f) \u2264 adeg(f)^2 for all f",
+            "note": "Shown by Sherstov [She13] and related work: adeg(f) \u2265 sqrt(bs(f)), implying bs \u2264 adeg^2.",
+            "citation_key": "She13"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "D",
+            "superset": "Q",
+            "polynomial": 6,
+            "description": "D(f) = O(Q(f)^6) for all f",
+            "note": "Follows from combining: Q \u2265 adeg, adeg^2 \u2265 bs (Sherstov), bs \u2265 s (trivial), s^2 \u2265 bs (Huang), and D \u2264 C^2 \u2264 bs^2\u00b7s^2 \u2264 s^6 \u2264 bs^3 \u2264 adeg^6 \u2264 Q^6. See [ABKRT21] for a tight chain.",
+            "citation_key": "ABKRT21"
+        },
+        {
+            "type": "poly_containment",
+            "subset": "D",
+            "superset": "R",
+            "polynomial": 3,
+            "description": "D(f) = O(R(f)^3) for all f",
+            "note": "Follows from D \u2264 C^2 and C \u2264 O(R^{3/2}) [ABK16], giving D = O(R^3). The tight relationship between D and R remains open.",
+            "citation_key": "ABK16"
+        },
+        {
+            "type": "combination",
+            "description": "D(f) \u2264 N(f) \u00b7 coN(f) = C_1(f) \u00b7 C_0(f) for all f",
+            "measures": [
+                "D",
+                "N",
+                "coN"
+            ],
+            "note": "A classical result [Nis91]: the product of nondeterministic and co-nondeterministic complexities upper bounds deterministic complexity.",
+            "citation_key": "Nis91"
+        },
+        {
+            "type": "combination",
+            "description": "R_0(f) \u2264 sqrt(D(f) \u00b7 C(f)) for all f",
+            "measures": [
+                "R0",
+                "D",
+                "C"
+            ],
+            "note": "A refined bound relating the Las Vegas query complexity to the geometric mean of D and C."
+        },
+        {
+            "type": "combination",
+            "description": "deg(f) \u2264 2 \u00b7 Q_E(f) for all f, i.e., Q_E(f) \u2265 ceil(deg(f)/2)",
+            "measures": [
+                "deg",
+                "QE"
+            ],
+            "note": "From the polynomial method [BBC+01]: any T-query exact quantum algorithm computes a polynomial of degree \u2264 2T.",
+            "citation_key": "BBC01"
+        }
+    ],
+    "oracle_separations": [
+        {
+            "description": "Q(f) vs R(f): The OR function gives Q(OR_n) = Theta(sqrt(n)) while R(OR_n) = Theta(n), a quadratic separation. This is tight by the BBBV lower bound.",
+            "smaller": "Q",
+            "larger": "R",
+            "witness": "OR_n",
+            "citation_key": "BBBV97"
+        },
+        {
+            "description": "R(f) vs D(f): AND-OR tree gives R(f) = Theta(n^{0.793}) while D(f) = n (conjectured tight gap of n^{0.793}).",
+            "smaller": "R",
+            "larger": "D",
+            "witness": "AND_OR_tree"
+        },
+        {
+            "description": "Q(f) vs D(f): Simon's algorithm and related problems give exponential separations between Q and D in the oracle model.",
+            "smaller": "Q",
+            "larger": "D",
+            "witness": "Simon_problem"
+        },
+        {
+            "description": "UPP(f) vs Q(f): The Forrelation function achieves UPP(f) = 1 while Q(f) = Omega(sqrt(n)), an asymptotically maximal separation [AA15].",
+            "smaller": "UPP",
+            "larger": "Q",
+            "witness": "Forrelation",
+            "citation_key": "AA15"
+        },
+        {
+            "description": "adeg(f) vs deg(f): The Majority function has adeg(MAJ_n) = Theta(sqrt(n)) but deg(MAJ_n) = n.",
+            "smaller": "adeg",
+            "larger": "deg",
+            "witness": "MAJ_n"
+        },
+        {
+            "description": "R1(f) vs R(f): The OR function has R_1(OR_n) = Theta(n) while R(OR_n) = Theta(sqrt(n)), a quadratic separation.",
+            "smaller": "R",
+            "larger": "R1",
+            "witness": "OR_n"
+        },
+        {
+            "description": "s(f) vs bs(f): Rubinstein [Rub95] exhibited a function with bs(f) = Omega(s(f)^2), showing Huang's bound is tight.",
+            "smaller": "s",
+            "larger": "bs",
+            "witness": "Rubinstein_function",
+            "citation_key": "Rub95"
+        }
+    ],
+    "citations": {
+        "BBC01": "Beals, Buhrman, Cleve, Mosca, de Wolf. Quantum lower bounds by polynomials. JACM 2001.",
+        "NS94": "Nisan, Szegedy. On the degree of Boolean functions as real polynomials. Combinatorica 1994.",
+        "HLS07": "H\u00f8yer, Lee, \u0160palek. Negative weights make adversaries stronger. STOC 2007.",
+        "Rei11": "Reichardt. Reflections for quantum query algorithms. SODA 2011.",
+        "Hua19": "Huang. Induced subgraphs of hypercubes and a proof of the Sensitivity Conjecture. Annals of Mathematics 2019.",
+        "SW86": "Saks, Wigderson. Probabilistic Boolean decision trees and the complexity of evaluating game trees. FOCS 1986.",
+        "Tal13": "Tal. Properties and applications of Boolean function composition. ITCS 2013.",
+        "She13": "Sherstov. Making polynomials robust to noise. STOC 2013.",
+        "ABKRT21": "Aaronson, Ben-David, Kothari, Rao, Tal. Degree vs. Approximate Degree and Quantum Implications of Huang's Sensitivity Theorem. STOC 2021.",
+        "Mon14": "Montanaro. A composition theorem for decision tree complexity. Chicago Journal of Theoretical Computer Science 2014.",
+        "Nis91": "Nisan. CREW PRAMs and decision trees. SIAM J. Comput. 1991.",
+        "ABK16": "Aaronson, Ben-David, Kothari. Separations in query complexity using cheat sheets. STOC 2016.",
+        "BBBV97": "Bennett, Bernstein, Brassard, Vazirani. Strengths and weaknesses of quantum computing. SIAM J. Comput. 1997.",
+        "AA15": "Aaronson, Ambainis. Forrelation: A problem that optimally separates quantum from classical computing. STOC 2015.",
+        "Rub95": "Rubinstein. Sensitivity vs. block sensitivity of Boolean functions. IPL 1995.",
+        "Bei93": "Beigel. The polynomial method in circuit complexity. SCT 1993."
+    }
+}
