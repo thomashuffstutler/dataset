@@ -1279,7 +1279,7 @@
         },
         "existsR":{
             "name":"existsR",
-            "latex_name":"\\mathsf{\\exists R}",
+            "latex_name":"\\mathsf{\\exists}\\mathbb{R}",
             "description":"Existential theory of the reals",
             "definition":"Problems reducible to the language of multivariate polynomials with integer coefficients that have a real solution.",
             "information":"",
