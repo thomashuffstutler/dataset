@@ -384,7 +384,7 @@
             "name": "adeg",
             "latex_name": "\\widetilde{\\mathsf{deg}}",
             "description": "Approximate Degree",
-            "definition": "The approximate degree of $f$ is $\\widetilde{\\deg}(f) = \\min\\{\\deg(p) : p$ is a real polynomial with $|p(x) - f(x)| \\leq 1/3$ for all $x \\in \\{0,1\\}^n\\}$.",
+            "definition": "The approximate degree of $f$ is $adeg(f) = \\min\\{\\deg(p) : p$ is a real polynomial with $|p(x) - f(x)| \\leq 1/3$ for all $x \\in \\{0,1\\}^n\\}$.",
             "information": "Defined by Nisan and Szegedy [NS94]. A foundational lower bound for quantum query complexity: $\\widetilde{\\deg}(f) \\leq Q(f)$ for all $f$ [BBC+01]. Known to satisfy $\\widetilde{\\deg}(f) \\geq \\sqrt{\\mathsf{bs}(f)}$ [She13], so $\\mathsf{bs}(f) \\leq \\widetilde{\\deg}(f)^2$. Also $\\widetilde{\\deg}(f)^2 = \\Theta(\\mathsf{fbs}(f))$ [Tal13]. The OR function has $\\widetilde{\\deg}(\\text{OR}_n) = \\Theta(\\sqrt{n})$.",
             "complement": "adeg",
             "links": [

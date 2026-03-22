@@ -1279,12 +1279,12 @@
         },
         "existsR":{
             "name":"existsR",
-            "latex_name":"\\mathsf{\\exists}\\mathbb{R}",
+            "latex_name":"\\exists\\mathbb{R}",
             "description":"Existential theory of the reals",
             "definition":"Problems reducible to the language of multivariate polynomials with integer coefficients that have a real solution.",
             "information":"",
             "complement":"",
-            "links":[["Complexity Zoo", "E#existsreals"]],
+            "links":[["Complexity Zoo", "E#existsreals"], ["Wikipedia", "https://en.wikipedia.org/wiki/Existential_theory_of_the_reals"]],
             "tags":[],
             "see_also":["NP", "PSPACE"]
         }
