@@ -1286,7 +1286,18 @@
             "complement":"",
             "links":[["Complexity Zoo", "E#existsreals"], ["Wikipedia", "https://en.wikipedia.org/wiki/Existential_theory_of_the_reals"]],
             "tags":[],
-            "see_also":["NP", "PSPACE"]
+            "see_also":["existsC", "NP", "PSPACE"]
+        },
+        "existsC":{
+            "name":"existsC",
+            "latex_name":"\\exists\\mathbb{C}",
+            "description":"Existential theory of the complex numbers",
+            "definition":"",
+            "information":"[Koi96] shows that assuming the Riemann hypothesis, $\\exists\\mathbb{C} \\subseteq \\mathsf{AM}$.",
+            "complement":"",
+            "links":[],
+            "tags":[],
+            "see_also":["existsR", "NP", "PSPACE"]
         }
     }
 }

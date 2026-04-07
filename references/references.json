@@ -956,6 +956,25 @@
                 "month": "jan",
                 "pages": "865-902"
             }
+        },
+        {
+            "identifier": "Koi96",
+            "citation_key": "Koiran_1996",
+            "entry_type": "article",
+            "fields": {
+                "title": "Hilbert’s Nullstellensatz Is in the Polynomial Hierarchy",
+                "volume": "12",
+                "ISSN": "0885-064X",
+                "url": "http://dx.doi.org/10.1006/jcom.1996.0019",
+                "DOI": "10.1006/jcom.1996.0019",
+                "number": "4",
+                "journal": "Journal of Complexity",
+                "publisher": "Elsevier BV",
+                "author": "Koiran, Pascal",
+                "year": "1996",
+                "month": "dec",
+                "pages": "273–286"
+            }
         }
     ]
 }
