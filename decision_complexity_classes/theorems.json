@@ -1016,8 +1016,13 @@
         },
         {
             "type":"containment",
-            "subset":"NP",
+            "subset":"existsC",
             "superset":"existsR"
+        },
+        {
+            "type":"containment",
+            "subset":"NP",
+            "superset":"existsC"
         }
     ],
     "oracle_separations":[
