@@ -1072,7 +1072,10 @@
     ],
     "oracle_separations":[
         {
-            
+            "type":"standard",
+            "succeeds":["QMA"],
+            "fails":["QCMA"],
+            "citation":"BHNZ25"
         }
     ]
 }
