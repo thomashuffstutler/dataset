@@ -1023,6 +1023,46 @@
             "type":"containment",
             "subset":"NP",
             "superset":"existsC"
+        },
+        {
+            "type":"containment",
+            "subset":"ZBQP",
+            "superset":"ZQP"
+        },
+        {
+            "type":"containment",
+            "subset":"EQP",
+            "superset":"ZQP"
+        },
+        {
+            "type":"containment",
+            "subset":"ZBQP",
+            "superset":"RBQP"
+        },
+        {
+            "type":"containment",
+            "subset":"RBQP",
+            "superset":"RQP"
+        },
+        {
+            "type":"containment",
+            "subset":"RQP",
+            "superset":"BQP"
+        },
+        {
+            "type":"containment",
+            "subset":"ZPP",
+            "superset":"ZBQP"
+        },
+        {
+            "type":"containment",
+            "subset":"RBQP",
+            "superset":"NP"
+        },
+        {
+            "type":"containment",
+            "subset":"ZBQP",
+            "superset":"NPcapcoNP"
         }
     ],
     "oracle_separations":[
