@@ -1063,6 +1063,11 @@
             "type":"containment",
             "subset":"ZBQP",
             "superset":"NPcapcoNP"
+        },
+        {
+            "type":"containment",
+            "subset":"ZQP",
+            "superset":"RQP"
         }
     ],
     "oracle_separations":[
