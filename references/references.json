@@ -975,6 +975,136 @@
                 "month": "dec",
                 "pages": "273–286"
             }
+        },
+        {
+            "identifier": "BGS75",
+            "citation_key": "baker_gill_solovay_1975",
+            "entry_type": "article",
+            "fields": {
+                "author": "Baker, Theodore P. and Gill, John and Solovay, Robert",
+                "title": "Relativizations of the {P} =? {NP} Question",
+                "year": "1975",
+                "pages": "431--442",
+                "doi": "10.1137/0204037",
+                "journal": "SIAM Journal on Computing",
+                "volume": "4",
+                "number": "4",
+                "publisher": "Society for Industrial and Applied Mathematics",
+                "url": "https://doi.org/10.1137/0204037"
+            }
+        },
+        {
+            "identifier": "BG81",
+            "citation_key": "bennett_gill_1981",
+            "entry_type": "article",
+            "fields": {
+                "author": "Bennett, Charles H. and Gill, John",
+                "title": "Relative to a Random Oracle {A}, {P}$^A$ $\\neq$ {NP}$^A$ $\\neq$ co-{NP}$^A$ with Probability 1",
+                "year": "1981",
+                "pages": "96--113",
+                "doi": "10.1137/0210008",
+                "journal": "SIAM Journal on Computing",
+                "volume": "10",
+                "number": "1",
+                "publisher": "Society for Industrial and Applied Mathematics",
+                "url": "https://doi.org/10.1137/0210008"
+            }
+        },
+        {
+            "identifier": "BV97",
+            "citation_key": "bernstein_vazirani_1997",
+            "entry_type": "article",
+            "fields": {
+                "author": "Bernstein, Ethan and Vazirani, Umesh",
+                "title": "Quantum Complexity Theory",
+                "year": "1997",
+                "pages": "1411--1473",
+                "doi": "10.1137/S0097539796300921",
+                "journal": "SIAM Journal on Computing",
+                "volume": "26",
+                "number": "5",
+                "publisher": "Society for Industrial and Applied Mathematics",
+                "url": "https://doi.org/10.1137/S0097539796300921"
+            }
+        },
+        {
+            "identifier": "Yao85",
+            "citation_key": "yao_1985_separating_ph",
+            "entry_type": "inproceedings",
+            "fields": {
+                "author": "Yao, Andrew Chi-Chih",
+                "title": "Separating the polynomial-time hierarchy by oracles",
+                "year": "1985",
+                "pages": "1--10",
+                "doi": "10.1109/SFCS.1985.49",
+                "booktitle": "26th Annual Symposium on Foundations of Computer Science (FOCS 1985)",
+                "publisher": "IEEE Computer Society",
+                "url": "https://doi.org/10.1109/SFCS.1985.49"
+            }
+        },
+        {
+            "identifier": "Has89",
+            "citation_key": "hastad_1989_almost_optimal",
+            "entry_type": "incollection",
+            "fields": {
+                "author": "H{\\aa}stad, Johan",
+                "title": "Almost optimal lower bounds for small depth circuits",
+                "year": "1989",
+                "pages": "143--170",
+                "booktitle": "Advances in Computing Research, Volume 5: Randomness and Computation",
+                "editor": "Micali, Silvio",
+                "publisher": "JAI Press",
+                "volume": "5"
+            }
+        },
+        {
+            "identifier": "BBBV97",
+            "citation_key": "bennett_bernstein_brassard_vazirani_1997",
+            "entry_type": "article",
+            "fields": {
+                "author": "Bennett, Charles H. and Bernstein, Ethan and Brassard, Gilles and Vazirani, Umesh",
+                "title": "Strengths and Weaknesses of Quantum Computing",
+                "year": "1997",
+                "pages": "1510--1523",
+                "doi": "10.1137/S0097539796300933",
+                "journal": "SIAM Journal on Computing",
+                "volume": "26",
+                "number": "5",
+                "publisher": "Society for Industrial and Applied Mathematics",
+                "url": "https://doi.org/10.1137/S0097539796300933"
+            }
+        },
+        {
+            "identifier": "Aar10",
+            "citation_key": "aaronson_2010_bqp_polynomial_hierarchy",
+            "entry_type": "inproceedings",
+            "fields": {
+                "author": "Aaronson, Scott",
+                "title": "{BQP} and the Polynomial Hierarchy",
+                "year": "2010",
+                "pages": "141--150",
+                "doi": "10.1145/1806689.1806711",
+                "booktitle": "Proceedings of the 42nd ACM Symposium on Theory of Computing (STOC 2010)",
+                "publisher": "Association for Computing Machinery",
+                "url": "https://doi.org/10.1145/1806689.1806711"
+            }
+        },
+        {
+            "identifier": "RT22",
+            "citation_key": "raz_tal_2022_oracle_separation_bqp_ph",
+            "entry_type": "article",
+            "fields": {
+                "author": "Raz, Ran and Tal, Avishay",
+                "title": "Oracle Separation of {BQP} and {PH}",
+                "year": "2022",
+                "pages": "30:1--30:21",
+                "doi": "10.1145/3530258",
+                "journal": "Journal of the ACM",
+                "volume": "69",
+                "number": "4",
+                "publisher": "Association for Computing Machinery",
+                "url": "https://doi.org/10.1145/3530258"
+            }
         }
     ]
 }
