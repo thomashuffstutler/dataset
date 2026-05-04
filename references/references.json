@@ -1105,6 +1105,24 @@
                 "publisher": "Association for Computing Machinery",
                 "url": "https://doi.org/10.1145/3530258"
             }
+        },
+        {
+            "identifier": "BW03",
+            "citation_key": "Buhrman_2003",
+            "entry_type": "article",
+            "fields": {
+                "title": "Quantum zero-error algorithms cannot be composed",
+                "volume": "87",
+                "ISSN": "0020-0190",
+                "url": "http://dx.doi.org/10.1016/S0020-0190(03)00254-0",
+                "DOI": "10.1016/s0020-0190(03)00254-0",
+                "number": "2",
+                "journal": "Information Processing Letters",
+                "publisher": "Elsevier BV",
+                "author": "Buhrman, Harry and de Wolf, Ronald",
+                "year": "2003",
+                "month": "July"
+            }
         }
     ]
 }

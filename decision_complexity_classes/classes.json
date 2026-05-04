@@ -534,9 +534,9 @@
             "latex_name":"\\mathsf{EQP}",
             "description":"Exact Quantum Polynomial Time",
             "definition": "Same as BQP, except we output the correct answer with probability 1.",
-            "information":"",
+            "information":"Note that unlike BQP, the class may differ based on the gate set given. For a more detailed explanation of the caveats of EQP, see the links.",
             "complement": "EQP",
-            "links": [["Complexity Zoo", "E#eqp"]],
+            "links": [["Complexity Zoo", "E#eqp"], ["Complexity Zoo: $\\mathsf{EQP_K}$", "https://complexityzoo.net/Complexity_Zoo:E#eqpk"]],
             "tags": ["Quantum", "Time"],
             "see_also": ["BQP", "P"]
         },
@@ -565,7 +565,7 @@
         "QMA1":{
             "name":"QMA1",
             "latex_name":"\\mathsf{QMA_{1}}",
-            "description":"One-sided $\\mathsf{QMA}$",
+            "description":"One-Sided $\\mathsf{QMA}$",
             "definition": "QMA, except for a \"yes\" instance, there exists a state which is accepted with probability 1.",
             "information":"It has been shown that Quantum k-SAT is $\\mathsf{QMA_{1}}$-complete for $k\\geq 3$.",
             "complement": "",
@@ -1298,6 +1298,50 @@
             "links":[],
             "tags":[],
             "see_also":["existsR", "NP", "AM"]
+        },
+        "ZQP":{
+            "name":"ZQP",
+            "latex_name":"\\mathsf{ZQP}",
+            "description":"Zero-Error EQP",
+            "definition":"The class of languages $L$ which may be solved by a QTM which outputs yes, no and maybe, assuming that the probability it answers maybe is at most $1/2$. If $x\\in L$, then probability of answering no is $0$ and vice-versa.",
+            "information":"There exists an oracle with respect to which ZQP is not self-low [BW03]. Has similar caveats to EQP.",
+            "complement":"",
+            "links":[["Complexity Zoo", "Z#zqp"]],
+            "tags":[],
+            "see_also":["ZPP", "ZBQP", "RQP"]
+        },
+        "RQP":{
+            "name":"RQP",
+            "latex_name":"\\mathsf{RQP}",
+            "description":"One-Sided Error EQP",
+            "definition":"The class of languages $L$ which may be solved by a QTM which always rejects in a no case, but in a yes case, accepts with probability at least $1/2$.",
+            "information":"Has similar caveats to EQP.",
+            "complement":"",
+            "links":[["Complexity Zoo", "R#rqp"]],
+            "tags":[],
+            "see_also":["RP", "RBQP","ZQP"]
+        },
+        "ZBQP":{
+            "name":"ZBQP",
+            "latex_name":"\\mathsf{ZBQP}",
+            "description":"Strict Quantum ZPP",
+            "definition":"Class of languages in NPcapcoNP such that both positive and negative witnesses are in $\\mathsf{FBQP}$.",
+            "information":"Unlike ZQP, ZBQP is known to be self-low.",
+            "complement":"",
+            "links":[["Complexity Zoo", "Z#zbqp"], ["MathOverflow", "https://mathoverflow.net/questions/40776/whats-known-about-the-relationship-about-eqp-and-bqp"]],
+            "tags":[],
+            "see_also":["ZQP", "RBQP"]
+        },
+        "RBQP":{
+            "name":"RBQP",
+            "latex_name":"\\mathsf{RBQP}",
+            "description":"Strict Quantum RP",
+            "definition":"Class of languages in NP whose witness is in $\\mathsf{FBQP}$.",
+            "information":"",
+            "complement":"",
+            "links":[["Complexity Zoo", "R#rbqp"], ["MathOverflow", "https://mathoverflow.net/questions/40776/whats-known-about-the-relationship-about-eqp-and-bqp"]],
+            "tags":[],
+            "see_also":["RQP", "ZBQP"]
         }
     }
 }
