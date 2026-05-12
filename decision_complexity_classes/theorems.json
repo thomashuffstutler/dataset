@@ -1076,6 +1076,60 @@
             "succeeds":["QMA"],
             "fails":["QCMA"],
             "citation":"BHNZ25"
+        },
+        {
+            "type":"standard",
+            "succeeds":["NP"],
+            "fails":["P"],
+            "citation":"BGS75"
+        },
+        {
+            "type":"random",
+            "succeeds":["NP"],
+            "fails":["P"],
+            "citation":"BG81"
+        },
+        {
+            "type":"random",
+            "succeeds":["NP"],
+            "fails":["coNP"],
+            "citation":"BG81"
+        },
+        {
+            "type":"random",
+            "succeeds":["coNP"],
+            "fails":["NP"],
+            "citation":"BG81"
+        },
+        {
+            "type":"standard",
+            "succeeds":["BQP"],
+            "fails":["MA"],
+            "citation":"BV97"
+        },
+        {
+            "type":"standard",
+            "succeeds":["Sigma2"],
+            "fails":["NP"],
+            "citation":"Yao85"
+        },
+        {
+            "type":"standard",
+            "succeeds":["PH"],
+            "fails":["Sigma2"],
+            "citation":"Yao85"
+        },
+        {
+            "type":"standard",
+            "succeeds":["NP"],
+            "fails":["BQP"],
+            "citation":"BBBV97"
+        },
+        {
+            "type":"standard",
+            "succeeds":["BQP"],
+            "fails":["PH"],
+            "citation":"RT22"
         }
     ]
 }
